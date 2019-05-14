@@ -1,0 +1,92 @@
+.case-study-bg {
+    background: $projectBg;
+
+    .line {
+        height: 1px;
+        width: 100%;
+        background-color: $lineColor;
+        margin: 8rem 0 0 0;
+    }
+    
+
+    h2 {
+        text-align: left; 
+        line-height: 1; 
+    }
+
+    h1 {
+        font-size: 5rem;
+        text-align: left;
+        color: #BCBCBC;
+        line-height: 1;
+        margin: 0;
+    }
+
+}
+
+.project {
+    margin-left: auto;
+    max-width: 150rem;
+
+    
+    &__wrapper {
+        display: block;
+        padding: 6rem 0rem 0 4rem;
+
+        @mixin atSmall {
+            padding: 6rem 0 0 8rem;
+            display: flex;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding-right: 2rem;
+        flex: 0 1 auto;
+        position: relative;
+    }
+
+    &__problem {
+        padding: 0;
+
+        @mixin atMedium {
+            padding: 2rem 0;
+        }
+
+        @mixin atLarge {
+            padding: 7rem 0;
+        }
+
+        p {
+            max-width: 56.5rem;
+        }
+    }
+
+    &__tools {
+        h1 {
+            margin-bottom: 2rem;
+        }
+        
+        img {
+            margin-right: 1rem;
+        }
+    }
+
+    &__image-wrap {
+        flex: 0 1 100vh;
+        align-self: center;
+        padding-top: 4rem;
+        margin-left: auto;
+
+        @mixin atLarge {
+            padding-top: 0;
+        }
+        
+    }
+}
+
+.tasks {
+    padding: 12rem 0;
+}
