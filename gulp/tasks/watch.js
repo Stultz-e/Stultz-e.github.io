@@ -7,21 +7,21 @@ gulp.task('watch', function() {
     browserSync.init({
         /* notify: false, */
         server: {
-            baseDir: "app"
+            baseDir: "docs"
         }
     });
 
-    watch('./app/index.html', function() {
+    watch('./docs/index.html', function() {
         browserSync.reload();
     });
 
-    watch('./app/assets/styles/**/*.css', function() {
+    watch('./docs/assets/styles/**/*.css', function() {
         gulp.start('cssInject');
     });
 
 });
 
 gulp.task('cssInject', ['styles'], function() {
-     return gulp.src('./app/temp/styles/styles.css')
+     return gulp.src('./docs/temp/styles/styles.css')
     .pipe(browserSync.stream());
 })
