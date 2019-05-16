@@ -8,11 +8,11 @@ mixins = require('postcss-mixins');
 
 gulp.task('styles', function() {
     console.log("Imagine sass or PostCSS tasks running here.");
-    return gulp.src('./app/assets/styles/styles.css')
+    return gulp.src('./docs/assets/styles/styles.css')
     .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
     .on('error', function(errorInfo) {
         console.log(errorInfo.toString());
         this.emit('end');
     })
-    .pipe(gulp.dest('./app/temp/styles'));
+    .pipe(gulp.dest('./docs/temp/styles'));
 });

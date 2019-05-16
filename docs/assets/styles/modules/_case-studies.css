@@ -5,8 +5,10 @@
         height: 1px;
         width: 100%;
         background-color: $lineColor;
+        margin: 8rem 0 0 0;
     }
     
+
     h2 {
         text-align: left; 
         line-height: 1; 
@@ -19,25 +21,20 @@
         line-height: 1;
         margin: 0;
     }
+
 }
 
 .project {
     margin-left: auto;
     max-width: 150rem;
-    padding: 4rem 0rem 4rem 4rem;
 
-    &--clearpad {
-        padding-right: 0 !important;
-    }
-
-    @mixin atSmall {
-        padding: 8rem 4rem 10rem; 
-    }
-
+    
     &__wrapper {
         display: block;
+        padding: 6rem 0rem 0 4rem;
 
         @mixin atSmall {
+            padding: 6rem 0 0 8rem;
             display: flex;
         }
     }
@@ -46,22 +43,9 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        align-items: flex-start;
+        padding-right: 2rem;
         flex: 0 1 auto;
         position: relative;
-
-        @mixin atSmall {
-            padding-right: 2rem;
-        }
-
-        .text-limit {
-            max-width: 56.5rem;
-        }
-
-        span {
-           color: #F18000; 
-        }
-
     }
 
     &__problem {
@@ -101,19 +85,8 @@
         }
         
     }
+}
 
-    &__more-studies {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @mixin atSmall {
-            flex-flow: row;
-        }
-
-        .image-wrapper {
-            position: relative;
-            margin: 1rem;
-        }
-    }
+.tasks {
+    padding: 12rem 0;
 }
