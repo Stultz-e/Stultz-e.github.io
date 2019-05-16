@@ -1042,7 +1042,6 @@ nav .social-media-nav li a {
 
 .case-study-bg {
     background: #E4E4E4;
-
 }
 
 .case-study-bg .line {
@@ -1096,6 +1095,9 @@ nav .social-media-nav li a {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         padding-right: 2rem;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
