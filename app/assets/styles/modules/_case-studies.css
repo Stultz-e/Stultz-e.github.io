@@ -5,6 +5,11 @@
         height: 1px;
         width: 100%;
         background-color: $lineColor;
+        margin: 4rem 0;
+
+        @mixin atSmall {
+            margin: 8rem 0;
+        }
     }
     
     h2 {
@@ -24,15 +29,7 @@
 .project {
     margin-left: auto;
     max-width: 150rem;
-    padding: 4rem 0rem 4rem 4rem;
-
-    &--clearpad {
-        padding-right: 0 !important;
-    }
-
-    @mixin atSmall {
-        padding: 8rem 4rem 10rem; 
-    }
+    padding-left: 2rem;
 
     &__wrapper {
         display: block;
@@ -50,9 +47,37 @@
         flex: 0 1 auto;
         position: relative;
 
-        @mixin atSmall {
-            padding-right: 2rem;
+
+        @mixin atMedium {
+
         }
+
+        @mixin atLarge {
+
+        }
+        
+        
+        ul {
+            color: $mainGrey;
+        }
+
+        &--project2 {
+            flex: 0 0 45%;
+        }
+
+        &--project3 {
+            flex: 0 0 45%;
+        }
+
+    &__images {
+        &:not(:last-child) {
+            padding-bottom: 5rem;
+        }
+    }
+
+    &__tasks-header {
+        padding-bottom: 2rem;
+    }
 
         .text-limit {
             max-width: 56.5rem;
@@ -61,7 +86,6 @@
         span {
            color: #F18000; 
         }
-
     }
 
     &__problem {
@@ -91,15 +115,23 @@
     }
 
     &__image-wrap {
-        flex: 0 1 100vh;
+        flex: 0 2 100vh;
         align-self: center;
         padding-top: 4rem;
         margin-left: auto;
 
+        &--smaller {
+            flex: 1 0 100% ;
+
+            @mixin atSmall {
+                flex: 0 1 50%;
+                margin: auto;
+            }
+        }
+
         @mixin atLarge {
             padding-top: 0;
-        }
-        
+        }    
     }
 
     &__more-studies {
@@ -109,6 +141,7 @@
 
         @mixin atSmall {
             flex-flow: row;
+            margin-bottom: 10rem;
         }
 
         .image-wrapper {
@@ -116,4 +149,10 @@
             margin: 1rem;
         }
     }
+
+    
+    &__case-studies-header {
+        padding-bottom: 2rem;
+    }
+
 }

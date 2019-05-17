@@ -30,6 +30,14 @@ html {
     padding-top: 10rem;
 }
 
+.pt8 {
+    padding-top: 8rem;
+}
+
+.pt6 {
+    padding-top: 6rem;
+}
+
 .pb8 {
     padding-bottom: 8rem;
 }
@@ -41,6 +49,21 @@ html {
 .pb4 {
     padding-bottom: 4rem;
 }
+
+.pb3 {
+    padding-bottom: 3rem;
+}
+
+.clear-pad-top {
+    padding-top: 0 !important;
+}
+
+.clear-pad-top-bot {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
 
 ul {
     margin: .75rem 0;
