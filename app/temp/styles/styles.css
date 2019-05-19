@@ -1131,13 +1131,15 @@ nav .social-media-nav li a {
 }
 
 .project--bottom {
+        padding: 2rem 0;
+        max-width: 100%;
         margin: auto;
     }
 
 @media (min-width: 75em) {
 
 .project {
-        max-width: 90%
+        max-width: 85%
 }
     }
 
@@ -1244,8 +1246,8 @@ nav .social-media-nav li a {
 
 .project__image-wrap {
         -webkit-box-flex: 0;
-            -ms-flex: 0 2 100vh;
-                flex: 0 2 100vh;
+            -ms-flex: 0 2 auto;
+                flex: 0 2 auto;
         padding-top: 4rem;
         margin-left: auto;    
     }
@@ -1277,13 +1279,16 @@ nav .social-media-nav li a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
     }
 
 @media (min-width: 37.5em) {
@@ -1304,4 +1309,5 @@ nav .social-media-nav li a {
 
 .project__case-studies-header {
         padding-bottom: 2rem;
+        text-align: center !important;
     }
