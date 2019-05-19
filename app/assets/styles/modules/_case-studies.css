@@ -14,7 +14,7 @@
     
     h2 {
         text-align: left; 
-        line-height: 1; 
+        line-height: 1;
     }
 
     h1 {
@@ -28,8 +28,16 @@
 
 .project {
     margin-left: auto;
-    max-width: 150rem;
     padding-left: 2rem;
+
+    &--bottom {
+        margin: auto;
+    }
+
+
+    @mixin atLarge {
+        max-width: 90%;
+    }
 
     &__wrapper {
         display: block;
@@ -46,7 +54,6 @@
         align-items: flex-start;
         flex: 0 1 auto;
         position: relative;
-
 
         @mixin atMedium {
 
@@ -116,7 +123,6 @@
 
     &__image-wrap {
         flex: 0 2 100vh;
-        align-self: center;
         padding-top: 4rem;
         margin-left: auto;
 
@@ -149,10 +155,8 @@
             margin: 1rem;
         }
     }
-
-    
+ 
     &__case-studies-header {
         padding-bottom: 2rem;
     }
-
 }

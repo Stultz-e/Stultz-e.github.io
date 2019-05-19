@@ -1114,7 +1114,7 @@ nav .social-media-nav li a {
 
 .case-study-bg h2 {
         text-align: left; 
-        line-height: 1; 
+        line-height: 1;
     }
 
 .case-study-bg h1 {
@@ -1127,10 +1127,19 @@ nav .social-media-nav li a {
 
 .project {
     margin-left: auto;
-    max-width: 150rem;
     padding-left: 2rem;
-
 }
+
+.project--bottom {
+        margin: auto;
+    }
+
+@media (min-width: 75em) {
+
+.project {
+        max-width: 90%
+}
+    }
 
 .project__wrapper {
         display: block;
@@ -1237,8 +1246,6 @@ nav .social-media-nav li a {
         -webkit-box-flex: 0;
             -ms-flex: 0 2 100vh;
                 flex: 0 2 100vh;
-        -ms-flex-item-align: center;
-            align-self: center;
         padding-top: 4rem;
         margin-left: auto;    
     }
