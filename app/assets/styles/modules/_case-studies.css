@@ -8,7 +8,7 @@
         margin: 4rem 0;
 
         @mixin atSmall {
-            margin: 8rem 0;
+            margin: 6rem 0;
         }
     }
     
@@ -26,6 +26,20 @@
     }
 }
 
+.text {
+    &--limit {
+    max-width: 45.5rem;
+    }
+
+    &--more-limit {
+        max-width: 53.5rem;
+    }
+
+    &--less-limit {
+        max-width: 44.9rem;
+    }
+}
+
 .project {
     margin-left: auto;
     padding-left: 2rem;
@@ -36,6 +50,18 @@
         margin: auto;
     }
 
+    &--centered {
+        width: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-flow: column nowrap;
+
+        h1 {
+            text-align: left;
+        }
+    }
+
 
     @mixin atLarge {
         max-width: 85%;
@@ -44,10 +70,24 @@
     &__wrapper {
         display: block;
 
+        &--project2 {
+            flex: 0 0 45%;
+        }
+
+        &--project3 {
+            flex: 0 1;
+            justify-content: center;
+            display: block;
+        }
 
         @mixin atSmall {
             display: flex;
+            flex-flow: nowrap;
         }
+    }
+
+    &__text-body {
+        display: block;
     }
 
     &__body {
@@ -57,6 +97,10 @@
         align-items: flex-start;
         flex: 0 1 auto;
         position: relative;
+
+        &--project3 {
+            flex-flow: row nowrap;
+        }
 
         @mixin atMedium {
 
@@ -71,15 +115,8 @@
             color: $mainGrey;
         }
 
-        &--project2 {
-            flex: 0 0 45%;
-        }
-
-        &--project3 {
-            flex: 0 0 45%;
-        }
-
     &__images {
+        flex: 0 1 auto;
         &:not(:last-child) {
             padding-bottom: 5rem;
         }
@@ -88,10 +125,6 @@
     &__tasks-header {
         padding-bottom: 2rem;
     }
-
-        .text-limit {
-            max-width: 56.5rem;
-        }
 
         span {
            color: #F18000; 
@@ -106,7 +139,7 @@
         }
 
         @mixin atLarge {
-            padding: 7rem 0;
+            padding: 7rem 2rem 0 0;
         }
 
         p {
@@ -130,7 +163,7 @@
         margin-left: auto;
 
         &--smaller {
-            flex: 1 0 100% ;
+            flex: 1 0 100%;
 
             @mixin atSmall {
                 flex: 0 1 50%;
