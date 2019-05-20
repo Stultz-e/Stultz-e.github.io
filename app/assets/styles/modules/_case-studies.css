@@ -1,6 +1,7 @@
 .case-study-bg {
     background: $projectBg;
 
+    /* line that separates the sections */
     .line {
         height: 1px;
         width: 100%;
@@ -11,20 +12,23 @@
             margin: 6rem 0;
         }
     }
-    
+
+    /* LEFT ALIGN HEADERS TO NON CENTERED IN JUSTIFIED FLEXBOX */    
     h2 {
         text-align: left; 
         line-height: 1;
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         text-align: left;
         color: #BCBCBC;
         line-height: 1;
         margin: 0;
     }
 }
+
+/* MAX WIDTH FOR TEXT BOXES TO MATCH STYLE GUIDE */   
 
 .text {
     &--limit {
@@ -40,54 +44,43 @@
     }
 }
 
+/* MAIN CONTAINER, SETS THE BEGINNING OF THE CONTAINER */   
 .project {
     margin-left: auto;
     padding-left: 2rem;
 
-    &--bottom {
-        padding: 2rem 0;
-        max-width: 100%;
-        margin: auto;
+    @mixin atLarge {
+        max-width: 85%;
     }
 
     &--centered {
-        width: 50%;
         display: flex;
-        margin: auto;
         justify-content: center;
         flex-flow: column nowrap;
+        margin: auto;
+        max-width: 60rem;
 
         h1 {
             text-align: left;
         }
     }
 
-
-    @mixin atLarge {
-        max-width: 85%;
-    }
-
+ /* MAIN CONTAINER, SETS THE flexflow */   
     &__wrapper {
         display: block;
-
-        &--project2 {
-            flex: 0 0 45%;
-        }
-
-        &--project3 {
-            flex: 0 1;
-            justify-content: center;
-            display: block;
-        }
 
         @mixin atSmall {
             display: flex;
             flex-flow: nowrap;
         }
-    }
+        
+        &--project2 {
+            flex: 0 0 45%;
+        }
 
-    &__text-body {
-        display: block;
+        &--project3 {
+            flex-flow: column;
+        }
     }
 
     &__body {
@@ -102,35 +95,23 @@
             flex-flow: row nowrap;
         }
 
-        @mixin atMedium {
-
-        }
-
-        @mixin atLarge {
-
-        }
-        
-        
         ul {
             color: $mainGrey;
         }
 
-    &__images {
-        flex: 0 1 auto;
-        &:not(:last-child) {
-            padding-bottom: 5rem;
+        &__images {
+            flex: 0 1 auto;
+            &:not(:last-child) {
+                padding-bottom: 5rem;
+            }
+        }
+
+        &__tasks-header {
+            padding-bottom: 2rem;
         }
     }
-
-    &__tasks-header {
-        padding-bottom: 2rem;
-    }
-
-        span {
-           color: #F18000; 
-        }
-    }
-
+    
+     /* Hero section pt.2 */
     &__problem {
         padding: 0;
 
@@ -147,6 +128,7 @@
         }
     }
 
+   /* Hero section pt.3 */
     &__tools {
         h1 {
             margin-bottom: 2rem;
@@ -155,46 +137,5 @@
         img {
             margin-right: 1rem;
         }
-    }
-
-    &__image-wrap {
-        flex: 0 2 auto;
-        padding-top: 4rem;
-        margin-left: auto;
-
-        &--smaller {
-            flex: 1 0 100%;
-
-            @mixin atSmall {
-                flex: 0 1 50%;
-                margin: auto;
-            }
-        }
-
-        @mixin atLarge {
-            padding-top: 0;
-        }    
-    }
-
-    &__more-studies {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column;
-
-        @mixin atSmall {
-            flex-flow: row;
-            margin-bottom: 10rem;
-        }
-
-        .image-wrapper {
-            position: relative;
-            margin: 1rem;
-        }
-    }
- 
-    &__case-studies-header {
-        padding-bottom: 2rem;
-        text-align: center !important;
-    }
+    }  
 }

@@ -1104,6 +1104,8 @@ nav .social-media-nav li a {
     background: #E4E4E4;
 }
 
+/* line that separates the sections */
+
 .case-study-bg .line {
         height: 1px;
         width: 100%;
@@ -1118,18 +1120,22 @@ nav .social-media-nav li a {
     }
     }
 
+/* LEFT ALIGN HEADERS TO NON CENTERED IN JUSTIFIED FLEXBOX */
+
 .case-study-bg h2 {
         text-align: left; 
         line-height: 1;
     }
 
 .case-study-bg h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         text-align: left;
         color: #BCBCBC;
         line-height: 1;
         margin: 0;
     }
+
+/* MAX WIDTH FOR TEXT BOXES TO MATCH STYLE GUIDE */
 
 .text--limit {
     max-width: 45.5rem;
@@ -1143,23 +1149,24 @@ nav .social-media-nav li a {
         max-width: 44.9rem;
     }
 
+/* MAIN CONTAINER, SETS THE BEGINNING OF THE CONTAINER */
+
 .project {
     margin-left: auto;
-    padding-left: 2rem;
+    padding-left: 2rem;  
 }
 
-.project--bottom {
-        padding: 2rem 0;
-        max-width: 100%;
-        margin: auto;
+@media (min-width: 75em) {
+
+.project {
+        max-width: 85%  
+}
     }
 
 .project--centered {
-        width: 50%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        margin: auto;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -1167,38 +1174,19 @@ nav .social-media-nav li a {
         -webkit-box-direction: normal;
             -ms-flex-flow: column nowrap;
                 flex-flow: column nowrap;
+        margin: auto;
+        max-width: 60rem;
     }
 
 .project--centered h1 {
             text-align: left;
         }
 
-@media (min-width: 75em) {
-
-.project {
-        max-width: 85%
-}
-    }
+/* MAIN CONTAINER, SETS THE flexflow */
 
 .project__wrapper {
         display: block;
     }
-
-.project__wrapper--project2 {
-            -webkit-box-flex: 0;
-                -ms-flex: 0 0 45%;
-                    flex: 0 0 45%;
-        }
-
-.project__wrapper--project3 {
-            -webkit-box-flex: 0;
-                -ms-flex: 0 1;
-                    flex: 0 1;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            display: block;
-        }
 
 @media (min-width: 37.5em) {
 
@@ -1211,9 +1199,18 @@ nav .social-media-nav li a {
     }
     }
 
-.project__text-body {
-        display: block;
-    }
+.project__wrapper--project2 {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 0 45%;
+                    flex: 0 0 45%;
+        }
+
+.project__wrapper--project3 {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: column;
+                    flex-flow: column;
+        }
 
 .project__body {
         display: -webkit-box;
@@ -1242,33 +1239,25 @@ nav .social-media-nav li a {
                     flex-flow: row nowrap;
         }
 
-@media (min-width: 50em) {
-    }
-
-@media (min-width: 75em) {
-    }
-
 .project__body ul {
             color: #666666;
         }
 
 .project__body__images {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
 
 .project__body__images:not(:last-child) {
-            padding-bottom: 5rem;
-        }
+                padding-bottom: 5rem;
+            }
 
 .project__body__tasks-header {
-        padding-bottom: 2rem;
-    }
-
-.project__body span {
-           color: #F18000; 
+            padding-bottom: 2rem;
         }
+
+/* Hero section pt.2 */
 
 .project__problem {
         padding: 0;
@@ -1292,6 +1281,8 @@ nav .social-media-nav li a {
             max-width: 56.5rem;
         }
 
+/* Hero section pt.3 */
+
 .project__tools h1 {
             margin-bottom: 2rem;
         }
@@ -1299,6 +1290,12 @@ nav .social-media-nav li a {
 .project__tools img {
             margin-right: 1rem;
         }
+
+.project--bottom {
+        padding: 2rem 0;
+        max-width: 100%;
+        margin: auto;
+    }
 
 .project__image-wrap {
         -webkit-box-flex: 0;
@@ -1323,6 +1320,10 @@ nav .social-media-nav li a {
                 margin: auto
         }
     }
+
+.project__image-wrap--center {
+            text-align: center;
+        }
 
 @media (min-width: 75em) {
 
