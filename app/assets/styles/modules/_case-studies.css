@@ -8,8 +8,18 @@
         background-color: $lineColor;
         margin: 4rem 0;
 
+        &--margin-bottom {
+            margin-bottom: 8rem;
+            display: hidden;
+            background-color: transparent;
+
+            @mixin atSmall {
+                margin-bottom: 12rem;
+            }
+        }
+
         @mixin atSmall {
-            margin: 6rem 0;
+            margin: 8rem 0;
         }
     }
 
@@ -39,15 +49,22 @@
         max-width: 53.5rem;
     }
 
+    &--most-limit {
+        max-width: 60.5rem;
+    }
+
+
     &--less-limit {
         max-width: 44.9rem;
     }
 }
 
+
 /* MAIN CONTAINER, SETS THE BEGINNING OF THE CONTAINER */   
 .project {
     margin-left: auto;
     padding-left: 2rem;
+
 
     @mixin atLarge {
         max-width: 85%;
@@ -67,7 +84,6 @@
 
  /* MAIN CONTAINER, SETS THE flexflow */   
     &__wrapper {
-        display: block;
 
         @mixin atSmall {
             display: flex;
@@ -81,6 +97,7 @@
         &--project3 {
             flex-flow: column;
         }
+        
     }
 
     &__body {
@@ -90,6 +107,10 @@
         align-items: flex-start;
         flex: 0 1 auto;
         position: relative;
+
+        &--even {
+            justify-content: space-evenly !important;
+        }
 
         &--project3 {
             flex-flow: row nowrap;
@@ -117,10 +138,6 @@
 
         @mixin atMedium {
             padding: 2rem 0;
-        }
-
-        @mixin atLarge {
-            padding: 7rem 2rem 0 0;
         }
 
         p {
