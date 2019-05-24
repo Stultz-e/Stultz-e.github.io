@@ -1,0 +1,52 @@
+nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $backgroundBlack;
+    
+    .logo {
+        font-size: 2rem;
+        color: $siteLinks;
+    }
+
+    .site-nav {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: space-between;
+        width: 28%;
+
+        a {
+            text-decoration: none;
+            color: $siteLinks;
+            cursor: pointer;
+        }
+    }
+
+    .social-media-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        li {
+            color: $siteLinks;
+            list-style: none;
+
+            &:not(:last-child) {
+                padding-right: 1.8rem;
+            }
+
+            &:not(:first-child) {
+                padding-right: 1.8rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $siteLinks;
+                cursor: pointer;
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
