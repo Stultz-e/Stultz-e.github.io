@@ -32,7 +32,11 @@
 
     &__text {
         padding-left: 2rem;
-        flex: 1 0 43%;
+        flex: 0 0 43%;
+    }
+
+    &__image {
+        flex: 0 0 58%;
     }
   
 }

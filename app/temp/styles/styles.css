@@ -4697,13 +4697,37 @@ nav .social-media-nav li a {
     }
     }
 
-.about__block .img-wrap {
+.about__block .img-wrap,
+        .about__block .vid-wrap {
             -webkit-box-flex: 0;
-                -ms-flex: 0 2 40%;
-                    flex: 0 2 40%;
+                -ms-flex: 0 1 40%;
+                    flex: 0 1 40%;
             padding: 1rem;
             margin: auto;
         }
+
+.about__block .vid-wrap { 
+            position: relative;
+            padding-top: 56.5%;
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+
+@media (min-width: 37.5em) {
+
+.about__block .vid-wrap {
+                padding-top: 22%
+        }
+    }
+
+.about__block .vid-wrap__vid {
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
 
 .about__block .musician {
             position: absolute;
@@ -4773,9 +4797,15 @@ nav .social-media-nav li a {
 
 .flex__text {
         padding-left: 2rem;
-        -webkit-box-flex: 1;
-            -ms-flex: 1 0 43%;
-                flex: 1 0 43%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 43%;
+                flex: 0 0 43%;
+    }
+
+.flex__image {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 58%;
+                flex: 0 0 58%;
     }
 
 .case-study-bg {
