@@ -4099,6 +4099,17 @@ html {
 }
     }
 
+#main {
+    -webkit-transition: margin-left 0.5s ease-in-out;
+    transition: margin-left 0.5s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+}
+
+ul {
+    padding: 0;
+}
+
 .flex-direction-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4201,7 +4212,7 @@ img {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    height: 64vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4213,9 +4224,23 @@ img {
             justify-content: center;
 }
 
+@media (min-width: 37.5em) {
+
+.cover {
+        height: 100vh
+}
+    }
+
 .cover img {
-        max-width: 100%;
-        height: auto;
+        max-width: 90%;
+    }
+
+@media (min-width: 37.5em) {
+
+.cover img {
+            max-width: 100%;
+            height: auto
+    }
     }
 
 .projects {
@@ -4226,7 +4251,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    padding: 6rem 0;
 }
 
 @media (min-width: 37.5em) {
@@ -4475,10 +4499,13 @@ h2 {
 
 footer {
     background-color: #222222;
-    height: 6rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -4494,8 +4521,18 @@ footer p {
         font-size: 1.3rem;
     }
 
-nav {
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #c7c7c7;
+}
+
+.navbar {
     max-width: 100%;
+    height:63px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4505,63 +4542,83 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     background-color: #222222;
+    overflow: hidden;
 }
 
-nav .logo {
-        font-size: 2rem;
-        color: #c7c7c7;
+.navbar a {
+        color: rgba(255, 255, 255, .8);
+        text-align: center;
+        text-decoration: none;
     }
 
-nav .site-nav {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        list-style: none;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        width: 28%;
+.navbar__nav {
+        display: none;
     }
 
-nav .site-nav a {
-            text-decoration: none;
-            color: #c7c7c7;
-            cursor: pointer;
+@media (min-width: 37.5em) {
+
+.navbar__nav {
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center
+    }
+    }
+
+.navbar__nav li {
+            padding: 1rem 1.8rem;
         }
 
-nav .social-media-nav {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+@media (min-width: 50em) {
+
+.navbar__nav li {
+                padding: 1rem 4rem
+        }
     }
 
-nav .social-media-nav li {
-            color: #c7c7c7;
+.navbar__social {
+        display: none;
+    }
+
+@media (min-width: 37.5em) {
+
+.navbar__social {
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+    }
+
+.navbar__social--footer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+@media (min-width: 50em) {
+
+.navbar__social--footer {
+                display: none
+        }
+    }
+
+.navbar__social li {
             list-style: none;
         }
 
-nav .social-media-nav li:not(:last-child) {
+.navbar__social li:not(:last-child) {
                 padding-right: 1.8rem;
             }
 
-nav .social-media-nav li:not(:first-child) {
-                padding-right: 1.8rem;
-            }
-
-nav .social-media-nav li a {
+.navbar__social li a {
                 text-decoration: none;
                 color: #c7c7c7;
                 cursor: pointer;
-                font-size: 2.6rem;
+                font-size: 2.8rem;
             }
 
 .about-cover {
@@ -5011,6 +5068,98 @@ nav .social-media-nav li a {
 .project__tools img {
             margin-right: 1rem;
         }
+
+.side-nav {
+    height: 100vh;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:#111;
+    opacity:0.9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 6rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow-x: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+.side-nav__links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding: 6rem 0 10rem 3.5rem;
+    }
+
+.side-nav__links a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 2.2rem;
+        color: #ccc;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+.side-nav__links a:not(:last-child) {
+          padding-bottom: 5rem;
+      }
+
+.side-nav__links a:hover{
+            color: #fff;
+        }
+
+.side-nav__social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-left: 3.5rem;
+    }
+
+.side-nav__social a {
+        text-decoration: none;
+        font-size: 4rem;
+        color: #fff;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+.side-nav__social a:not(:last-child) {
+          padding-right: 3.5rem;
+      }
+
+.side-nav__social a:hover{
+            color:#fff;
+        }
+
+.side-nav .btn-close {
+    position:absolute;
+    top: 0;
+    right: 2.5rem;
+    font-size: 5.5rem;
+  }
+
+@media (min-width: 37.5em) {
+    .open-slide {
+      display:none
+    }
+    }
 
 .project--bottom {
         padding: 2rem 0;

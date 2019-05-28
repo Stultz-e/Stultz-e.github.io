@@ -84,7 +84,6 @@
 
  /* MAIN CONTAINER, SETS THE flexflow */   
     &__wrapper {
-
         @mixin atSmall {
             display: flex;
             flex-flow: nowrap;

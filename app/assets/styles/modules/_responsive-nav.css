@@ -1,0 +1,76 @@
+  .side-nav {
+    height: 100vh;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:#111;
+    opacity:0.9;
+    display: flex;
+    padding: 6rem 0;
+    flex-flow: column;
+    align-items: flex-start;
+    overflow-x: hidden;
+    transition: 0.3s ease-in-out;
+
+    &__links {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      padding: 6rem 0 10rem 3.5rem;
+      
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 2.2rem;
+        color: #ccc;
+        transition: 0.3s;  
+
+                
+        &:not(:last-child) {
+          padding-bottom: 5rem;
+      }
+
+        &:hover{
+            color: #fff;
+        }
+      }
+    }
+
+    &__social {
+      display: flex;
+      padding-left: 3.5rem;
+
+      a {
+        text-decoration: none;
+        font-size: 4rem;
+        color: #fff;
+        transition: 0.3s;  
+
+        &:not(:last-child) {
+          padding-right: 3.5rem;
+      }
+
+        &:hover{
+            color:#fff;
+        }
+      }
+    }
+  }
+  
+  .side-nav .btn-close {
+    position:absolute;
+    top: 0;
+    right: 2.5rem;
+    font-size: 5.5rem;
+  }
+
+
+ 
+  @mixin atSmall{
+    .open-slide {
+      display:none
+    }
+  }
+  
