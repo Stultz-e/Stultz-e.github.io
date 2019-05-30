@@ -65,9 +65,21 @@
     margin-left: auto;
     padding-left: 2rem;
 
+    &--margin-right {
+        margin-right: auto;
+        margin-left: 0;
+    }
 
     @mixin atLarge {
         max-width: 85%;
+    }
+
+    &--centered-fw {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        margin: auto;
     }
 
     &--centered {

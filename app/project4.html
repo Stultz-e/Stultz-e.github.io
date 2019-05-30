@@ -16,19 +16,29 @@
 </head>
 
 <body class="case-study-bg">
-  <nav>
+  <nav class="navbar">
     <a href="index.html" class="logo">
       Chris Stultz
     </a>
 
-    <ul class="site-nav">
-      <li><a href="/research.html">Research</a></li>
-      <li><a href="/cv.html">CV</a></li>
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="25" height="25">
+          <path d="M0, 5 30, 5" stroke="#fff" stroke-width="3" />
+          <path d="M0, 14 30, 14" stroke="#fff" stroke-width="3" />
+          <path d="M0, 23 30, 23" stroke="#fff" stroke-width="3" />
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar__nav">
+      <li class="active"><a href="/index.html">Case Studies</a></li>
+      <li><a href="/esearch.html">Research</a></li>
       <li><a href="/about.html">About</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/cv.html">CV</a></li>
     </ul>
 
-    <ul class="social-media-nav">
+    <ul class="navbar__social">
       <li>
         <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </li>
@@ -44,109 +54,155 @@
     </ul>
   </nav>
 
-  <section class="project">
-    <div class="project__wrapper">
-      <div class="project__body project__body--even">
-        <div class="project__header">
-          <h1>Case Study #4</h1>
-          <h2>Features Build Out</h2>
-        </div>
-        <div class="project__problem">
-          <h1>Problem</h1>
-          <p>The existing site has become outdated. As the site's user base has grown additional admin features became
-            necessary to maintain and moderate user submitted content.</p>
-        </div>
-
-        <div class="project__tools">
-          <h1>Tools</h1>
-          <img src="/assets/images/project2/tool--xd.svg" alt="Adobe XD">
-          <img src="/assets/images/project2/tool--ae.svg" alt="Adobe After Effects">
-          <img src="/assets/images/project2/tool--ps.svg" alt="Adobe Photoshop">
-          <img src="/assets/images/project2/tool--vs.svg" alt="Visual Studio">
-          <img src="/assets/images/project2/tool--github.svg" alt="Github">
-        </div>
-      </div>
-
-      <div class="project__image-wrap">
-        <img src="/assets/images/project4/hero--image.png" alt="hero image">
-      </div>
-    </div>
-  </section>
-  
-  <div class="line line--margin-bottom"></div>
-
-  <div class="flex__container">
-    <div class="flex__text">
-      <h1>Company Website</h1>
-      <p>I built this 5 page site using materialize a CSS framework. I added some animations, custom graphics and made
-        it fully responsive in any screen. They use our platform for a large number of properties so this corporate site
-        was basically a favor.</p>
+  <div id="side-menu" class="side-nav">
+    <div class="side-nav__links">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="/contact.html">Case Studies</a>
+      <a href="/research.html">Research</a>
+      <a href="/cv.html">CV</a>
+      <a href="/about.html">About</a>
     </div>
 
-    <div class="flex__image">
-      <img src="/assets/images/project4/results--1.png" alt="result image">
+    <div class="side-nav__social">
+      <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+      <a href="https://www.behance.net/cstultz06a1" target="_blank"><i class="fab fa-behance-square"></i></a>
+
+      <a href="https://github.com/Stultz-e" target="_blank"><i class="fab fa-github-square"></i></a>
+
+      <a href="https://www.instagram.com/itsalwaysbeenchris/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </div>
 
-  <div class="line"></div>
+  <div id="main">
 
-  <div class="flex__container mr">
+    <section class="project">
+      <div class="project__wrapper">
+        <div class="project__body project__body--even animated fadeInUp fast">
+          <div class="project__header">
+            <h1>Case Study #4</h1>
+            <h2>Features Build Out</h2>
+          </div>
+          <div class="project__problem">
+            <h1>Problem</h1>
+            <p>The existing site has become outdated. As the site's user base has grown additional admin features became
+              necessary to maintain and moderate user submitted content.</p>
+          </div>
+
+          <div class="project__tools">
+            <h1>Tools</h1>
+            <img src="/assets/images/project2/tool--xd.svg" alt="Adobe XD">
+            <img src="/assets/images/project2/tool--ae.svg" alt="Adobe After Effects">
+            <img src="/assets/images/project2/tool--ps.svg" alt="Adobe Photoshop">
+            <img src="/assets/images/project2/tool--vs.svg" alt="Visual Studio">
+            <img src="/assets/images/project2/tool--github.svg" alt="Github">
+          </div>
+        </div>
+
+        <div class="project__image-wrap wow animated fadeInRight fast">
+          <img src="/assets/images/project4/hero--image.png" alt="hero image">
+        </div>
+      </div>
+    </section>
+
+    <div class="line line--margin-bottom"></div>
+
+    <div class="flex__container wow animated fadeInUp">
+      <div class="flex__text">
+        <h1>Company Website</h1>
+        <p>I built this 5 page site using materialize a CSS framework. I added some animations, custom graphics and made
+          it fully responsive in any screen. They use our platform for a large number of properties so this corporate
+          site
+          was basically a favor.</p>
+      </div>
+
+      <div class="flex__image">
+        <img src="/assets/images/project4/results--1.png" alt="result image">
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="flex__container mr wow animated fadeInUp">
       <div class="flex__image">
         <img src="/assets/images/project4/results--2.png" alt="result image">
       </div>
 
       <div class="flex__text">
-          <h1>Custom Video Footage</h1>
-          <p>A costumer had changed software providers for their rental properties. They came back asking us if we could make a "montage" of video clips and optimize it for web and make 
-          it the hero image for their landing page. I used After Effects for scene transitions and added an overlay.</p>          
-          <p>I used Adobe Encoder to convert the AE project into an optimized MP4 (under 10MB).</p>
-        </div>
+        <h1>Custom Video Footage</h1>
+        <p>A costumer had changed software providers for their rental properties. They came back asking us if we could
+          make a "montage" of video clips and optimize it for web and make
+          it the hero image for their landing page. I used After Effects for scene transitions and added an overlay.</p>
+        <p>I used Adobe Encoder to convert the AE project into an optimized MP4 (under 10MB).</p>
+      </div>
     </div>
 
     <div class="line"></div>
 
-    <div class="flex__container">
-        <div class="flex__text">
-          <h1>Animated Logos</h1>
-          <p>A company affiliate needed a new logo for their marketing revamp. They needed an animated umbrella which I designed in Illustrator, animated in After Effects and used a JavaScript plugin that "Lottie.js"</p>
-        </div>
-  
-        <div class="flex__image">
-          <img src="/assets/images/project4/results--3.png" alt="result image">
-        </div>
+    <div class="flex__container wow animated fadeInUp">
+      <div class="flex__text">
+        <h1>Animated Logos</h1>
+        <p>A company affiliate needed a new logo for their marketing revamp. They needed an animated umbrella which I
+          designed in Illustrator, animated in After Effects and used a JavaScript plugin that "Lottie.js"</p>
+      </div>
+
+      <div class="flex__image">
+        <img src="/assets/images/project4/results--3.png" alt="result image">
+      </div>
     </div>
 
     <div class="line"></div>
 
-    <section class="project project--centered">
-        <h1>Results</h1>
-        <p>I pride myself on my versatility and willingness to learn new things. The challenge of having to perform under time constraints, lack of knowledge, skill, expertise, intelligence and talent drives me to get the job done despite these limitations.</p>
+    <section class="project project--centered wow animated fadeInUp">
+      <h1>Results</h1>
+      <p>I pride myself on my versatility and willingness to learn new things. The challenge of having to perform under
+        time constraints, lack of knowledge, skill, expertise, intelligence and talent drives me to get the job done
+        despite these limitations.</p>
     </section>
 
     <div class="line"></div>
-  
 
-  <div class="project project--bottom">
-    <h1 class="project__case-studies-header">Case Studies</h1>
-    <div class="project__more-studies">
-      <div class="image-wrapper">
-        <img src="assets/images/project1.png" alt="project1">
-        <a href="project1.html" class="btn btn--orange">Full Case Study</a>
-      </div>
-      <div class="image-wrapper">
-        <img src="assets/images/project2.png" alt="project2">
-        <a href="project2.html" class="btn btn--orange">Full Case Study</a>
-      </div>
-      <div class="image-wrapper">
-        <img src="assets/images/project3.png" alt="project3">
-        <a href="project3.html" class="btn btn--orange">Full Case Study</a>
+
+    <div class="project project--bottom wow animated fadeInUp">
+      <h1 class="project__case-studies-header">Case Studies</h1>
+      <div class="project__more-studies">
+        <div class="image-wrapper">
+          <img src="assets/images/project1.png" alt="project1">
+          <a href="project1.html" class="btn btn--orange">Full Case Study</a>
+        </div>
+        <div class="image-wrapper">
+          <img src="assets/images/project2.png" alt="project2">
+          <a href="project2.html" class="btn btn--orange">Full Case Study</a>
+        </div>
+        <div class="image-wrapper">
+          <img src="assets/images/project3.png" alt="project3">
+          <a href="project3.html" class="btn btn--orange">Full Case Study</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <p>Copyright &copy; 2019 Chris Stultz All rights reserved. <a href="#"></p>
-  </footer>
+    <footer>
+      <p>Copyright &copy; 2019 Chris Stultz All rights reserved. <a href="#"></p>
+    </footer>
+  </div>
 </body>
+
+
+<script src="./assets/scripts/wow.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+<script>
+  function openSlideMenu() {
+    document.getElementById('side-menu').style.width = '65vw';
+    document.getElementById('main').style.marginLeft = '65vw';
+  }
+
+  function closeSlideMenu() {
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('main').style.marginLeft = '0';
+  }
+</script>
 
 </html>

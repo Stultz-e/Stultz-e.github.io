@@ -16,19 +16,29 @@
 </head>
 
 <body class="case-study-bg">
-  <nav>
+  <nav class="navbar">
     <a href="index.html" class="logo">
       Chris Stultz
     </a>
 
-    <ul class="site-nav">
-      <li><a href="/research.html">Research</a></li>
-      <li><a href="/cv.html">CV</a></li>
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="25" height="25">
+          <path d="M0, 5 30, 5" stroke="#fff" stroke-width="3" />
+          <path d="M0, 14 30, 14" stroke="#fff" stroke-width="3" />
+          <path d="M0, 23 30, 23" stroke="#fff" stroke-width="3" />
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar__nav">
+      <li class="active"><a href="/index.html">Case Studies</a></li>
+      <li><a href="/esearch.html">Research</a></li>
       <li><a href="/about.html">About</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/cv.html">CV</a></li>
     </ul>
 
-    <ul class="social-media-nav">
+    <ul class="navbar__social">
       <li>
         <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </li>
@@ -44,70 +54,93 @@
     </ul>
   </nav>
 
-  <section class="project">
-    <div class="project__wrapper pt8">
-      <div class="project__body">
-        <div class="project__header">
-          <h1>Case Study #1</h1>
-          <h2>Integrating Prototyping into the Company workflow</h2>
-        </div>
-        <div class="project__problem">
-          <h1>Problem</h1>
-          <p>The old development workflow was a word doc to code. The CEO would instruct the developers on edits after
-            something was coded up and it was not time effective.</p>
-        </div>
-
-        <div class="project__tools">
-          <h1>Tools</h1>
-          <img src="/assets/images/project1/tool--adobexd.png" alt="Adobe XD logo">
-          <img src="/assets/images/project1/tool--photoshop.png" alt="Adobe Photoshop">
-        </div>
-      </div>
-
-      <div class="project__image-wrap">
-        <img src="/assets/images/project1/hero--image.png" alt="hero image">
-      </div>
+  <div id="side-menu" class="side-nav">
+    <div class="side-nav__links">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="/contact.html">Case Studies</a>
+      <a href="/research.html">Research</a>
+      <a href="/cv.html">CV</a>
+      <a href="/about.html">About</a>
     </div>
-  </section>
 
-  <div class="line"></div>
+    <div class="side-nav__social">
+      <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
 
-  <section class="project">
-    <div class="project__wrapper">
-      <div class="project__body clear-pad-top-bot">
-        <h1 class="project__tasks-header">Tasks & Responsibilities</h1>
-        <p>Using Adobe XD I reverse engineered the companies websites and assets from code to artboards.</p>
-        <img class="project__images pb6" src="/assets/images/project1/results--1.png" alt="">
+      <a href="https://www.behance.net/cstultz06a1" target="_blank"><i class="fab fa-behance-square"></i></a>
 
-        <p>The artboards were wired up to simulate the live sites.</p>
-        <img class="project__images pb6" src="/assets/images/project1/results--2.png" alt="">
+      <a href="https://github.com/Stultz-e" target="_blank"><i class="fab fa-github-square"></i></a>
 
-        <p>XD was used to create development specs to hand off to the developer.</p>
-        <img class="project__images" src="/assets/images/project1/results--3.png" alt="">
-      </div>
+      <a href="https://www.instagram.com/itsalwaysbeenchris/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
-  </section>
+  </div>
 
-  <div class="line"></div>
+  <div id="main">
 
-  <section class="project">
-    <div class="project__wrapper">
-      <div class="project__body clear-pad-top-bot">
-        <h1>Results</h1>
-        <p class="text text--more-limit pb4">Moving from a "develop first, fix later" strategy, to leveraging UX/UI software
-          allowed
-          the company to iterate and create design solutions faster, discover edge cases earlier and avoid costly
-          redesigns all together.</p>
+    <section class="project">
+      <div class="project__wrapper pt8">
+        <div class="project__body animated fadeInLeft fast">
+          <div class="project__header">
+            <h1>Case Study #1</h1>
+            <h2>Integrating Prototyping into the Company workflow</h2>
+          </div>
+          <div class="project__problem">
+            <h1>Problem</h1>
+            <p>The old development workflow was a word doc to code. The CEO would instruct the developers on edits after
+              something was coded up and it was not time effective.</p>
+          </div>
+
+          <div class="project__tools">
+            <h1>Tools</h1>
+            <img src="/assets/images/project1/tool--adobexd.png" alt="Adobe XD logo">
+            <img src="/assets/images/project1/tool--photoshop.png" alt="Adobe Photoshop">
+          </div>
+        </div>
+
+        <div class="project__image-wrap animated fadeInRight fast">
+          <img src="/assets/images/project1/hero--image.png" alt="hero image">
+        </div>
       </div>
-    </div>
-    <img src="/assets/images/project1/project-1--results.png" alt="wireframe image">
-  </section>
+    </section>
 
-  <div class="line"></div>
+    <div class="line"></div>
 
-  <div class="project project--bottom">
-    <div class="flex-direction-col">
-      <h1 class="project__case-studies-header">Case Studies</h1>
+    <section class="project wow animated fadeInUp">
+      <div class="project__wrapper">
+        <div class="project__body clear-pad-top-bot">
+          <h1 class="project__tasks-header">Tasks & Responsibilities</h1>
+          <p>Using Adobe XD I reverse engineered the companies websites and assets from code to artboards.</p>
+          <img class="project__images pb6" src="/assets/images/project1/results--1.png" alt="">
+
+          <p>The artboards were wired up to simulate the live sites.</p>
+          <img class="project__images pb6" src="/assets/images/project1/results--2.png" alt="">
+
+          <p>XD was used to create development specs to hand off to the developer.</p>
+          <img class="project__images" src="/assets/images/project1/results--3.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="project wow animated fadeInUp">
+      <div class="project__wrapper">
+        <div class="project__body clear-pad-top-bot">
+          <h1>Results</h1>
+          <p class="text text--more-limit pb4">Moving from a "develop first, fix later" strategy, to leveraging UX/UI
+            software
+            allowed
+            the company to iterate and create design solutions faster, discover edge cases earlier and avoid costly
+            redesigns all together.</p>
+        </div>
+      </div>
+      <img src="/assets/images/project1/project-1--results.png" alt="wireframe image">
+    </section>
+
+    <div class="line"></div>
+
+    <div class="project project--bottom wow animated fadeInUp">
+      <div class="flex-direction-col">
+        <h1 class="project__case-studies-header">Case Studies</h1>
         <div class="project__more-studies">
           <div class="image-wrapper">
             <img src="assets/images/project2.png" alt="project2">
@@ -124,10 +157,26 @@
         </div>
       </div>
     </div>
-  
+  </div>
+
   <footer>
     <p>Copyright &copy; 2019 Chris Stultz All rights reserved. <a href="#"></p>
   </footer>
 </body>
+
+<script src="./assets/scripts/wow.js"></script>
+<script>new WOW().init();</script>
+
+<script> 
+  function openSlideMenu() {
+    document.getElementById('side-menu').style.width = '65vw';
+    document.getElementById('main').style.marginLeft = '65vw';
+  }
+
+  function closeSlideMenu() {
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('main').style.marginLeft = '0';
+  }
+  </script>
 
 </html>
