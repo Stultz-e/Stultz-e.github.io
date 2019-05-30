@@ -14,43 +14,75 @@
 </head>
 <body>
 
-  <nav>
+  <nav class="navbar">
     <a href="index.html" class="logo">
-      Chris Stultz
+        Chris Stultz
     </a>
-
-    <ul class="site-nav">
-      <li><a href="/research.html">Research</a></li>
-      <li><a href="/cv.html">CV</a></li>
+  
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width = "25" height="25">
+          <path d="M0, 5 30, 5" stroke="#fff" stroke-width="3"/>
+          <path d="M0, 14 30, 14" stroke="#fff" stroke-width="3"/>
+          <path d="M0, 23 30, 23" stroke="#fff" stroke-width="3"/>
+        </svg>
+      </a>
+    </span>
+  
+    <ul class="navbar__nav">
+      <li class="active"><a href="/index.html">Case Studies</a></li>
+      <li><a href="/esearch.html">Research</a></li>
       <li><a href="/about.html">About</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/cv.html">CV</a></li>
     </ul>
-
-    <ul class="social-media-nav">
-      <li>
+  
+    <ul class="navbar__social">
+        <li>
+          <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/cstultz06a1" target="_blank"><i class="fab fa-behance-square"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/Stultz-e" target="_blank"><i class="fab fa-github-square"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/itsalwaysbeenchris/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </nav>
+  
+    <div id="side-menu" class="side-nav">
+      <div class="side-nav__links">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="/contact.html">Case Studies</a>
+        <a href="/research.html">Research</a>
+        <a href="/cv.html">CV</a>
+        <a href="/about.html">About</a>
+      </div>
+  
+      <div class="side-nav__social">
         <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </li>
-      <li>
+      
         <a href="https://www.behance.net/cstultz06a1" target="_blank"><i class="fab fa-behance-square"></i></a>
-      </li>
-      <li>
+      
         <a href="https://github.com/Stultz-e" target="_blank"><i class="fab fa-github-square"></i></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/itsalwaysbeenchris/" target="_blank"><i class="fab fa-instagram"></i></a>
-      </li>
-    </ul>
-  </nav>
-
+      
+        <a href="https://www.instagram.com/itsalwaysbeenchris/" target="_blank"><i class="fab fa-instagram"></i></a>  
+      </div> 
+    </div>
+  
+    <div id="main">
+  
   <div class="cover">
-    <img src="assets/images/hero-me.png" alt="me bruh">
+    <img class="animated rollIn" src="assets/images/hero-me.png" alt="me bruh">
   </div>
 
-  <h1>Case Studies</h1>
-  <h2 class="mb-md">A collection of my <span class="accent">UX/UI</span> projects</h2>
+  <h1 class="animated wow animated zoomIn">Case Studies</h1>
+  <h2 class="mb-md animated wow animated zoomIn">A collection of my <span class="accent">UX/UI</span> projects</h2>
 
   <div class="projects">
-    <div class="projects__content">
+    <div class="projects__content wow animated zoomIn">
       <div class="image-wrapper">
         <img src="assets/images/project1.png" alt="project1">
         <a href="project1.html" class="btn btn--orange">Full Case Study</a>
@@ -73,7 +105,7 @@
       </div>
     </div>
 
-    <div class="projects__content">
+    <div class="projects__content wow animated zoomIn">
       <div class="image-wrapper">
         <img src="assets/images/project2.png" alt="project2">
         <a href="project2.html" class="btn btn--orange">Full Case Study</a>
@@ -95,7 +127,7 @@
       </div>
     </div>
 
-    <div class="projects__content">
+    <div class="projects__content wow animated zoomIn">
       <div class="image-wrapper">
         <img src="assets/images/project3.png" alt="project3">
         <a href="project3.html" class="btn btn--orange">Full Case Study</a>
@@ -116,9 +148,8 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="projects__content">
+  <div class="projects__content wow animated zoomIn">
     <div class="image-wrapper">
       <img src="assets/images/project4.png" alt="project1">
       <a href="project4.html" class="btn btn--orange">Full Case Study</a>
@@ -140,10 +171,28 @@
       </div>
     </div>
   </div>
+</div>
 
   <footer>
     <p>Copyright &copy; 2019 Chris Stultz All rights reserved. <a href="#"></p>
   </footer>
+</div>
+
+<script src="./assets/scripts/wow.js"></script>
+<script>new WOW().init();</script>
+
+<script> 
+  function openSlideMenu() {
+    document.getElementById('side-menu').style.width = '65vw';
+    document.getElementById('main').style.marginLeft = '65vw';
+  }
+
+  function closeSlideMenu() {
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('main').style.marginLeft = '0';
+  }
+  </script>
+
 </body>
 
 </html>

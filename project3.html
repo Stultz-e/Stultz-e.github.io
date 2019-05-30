@@ -16,19 +16,29 @@
 </head>
 
 <body class="case-study-bg">
-  <nav>
+  <nav class="navbar">
     <a href="index.html" class="logo">
       Chris Stultz
     </a>
 
-    <ul class="site-nav">
-      <li><a href="/research.html">Research</a></li>
-      <li><a href="/cv.html">CV</a></li>
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="25" height="25">
+          <path d="M0, 5 30, 5" stroke="#fff" stroke-width="3" />
+          <path d="M0, 14 30, 14" stroke="#fff" stroke-width="3" />
+          <path d="M0, 23 30, 23" stroke="#fff" stroke-width="3" />
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar__nav">
+      <li class="active"><a href="/index.html">Case Studies</a></li>
+      <li><a href="/esearch.html">Research</a></li>
       <li><a href="/about.html">About</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/cv.html">CV</a></li>
     </ul>
 
-    <ul class="social-media-nav">
+    <ul class="navbar__social">
       <li>
         <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </li>
@@ -44,115 +54,140 @@
     </ul>
   </nav>
 
-  <section class="project pt8">
-    <div class="project__wrapper">
-      <div class="project__body project__body--project2">
-        <div class="project__header">
-          <h1>Case Study #3</h1>
-          <h2>Features Build Out</h2>
+  <div id="side-menu" class="side-nav">
+    <div class="side-nav__links">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="/contact.html">Case Studies</a>
+      <a href="/research.html">Research</a>
+      <a href="/cv.html">CV</a>
+      <a href="/about.html">About</a>
+    </div>
+
+    <div class="side-nav__social">
+      <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+      <a href="https://www.behance.net/cstultz06a1" target="_blank"><i class="fab fa-behance-square"></i></a>
+
+      <a href="https://github.com/Stultz-e" target="_blank"><i class="fab fa-github-square"></i></a>
+
+      <a href="https://www.instagram.com/itsalwaysbeenchris/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <section class="project pt8">
+      <div class="project__wrapper">
+        <div class="project__body project__body--project2 animated fadeInLeft">
+          <div class="project__header">
+            <h1>Case Study #3</h1>
+            <h2>Features Build Out</h2>
+          </div>
+          <div class="project__problem">
+            <h1>Problem</h1>
+            <p>The existing site has become outdated. As the site's user base has grown additional admin features became
+              necessary to maintain and moderate user submitted content.</p>
+          </div>
+
+          <div class="project__tools">
+            <h1>Tools</h1>
+            <img src="/assets/images/project2/tool--xd.svg" alt="Adobe XD">
+            <img src="/assets/images/project2/tool--ae.svg" alt="Adobe After Effects">
+            <img src="/assets/images/project2/tool--ps.svg" alt="Adobe Photoshop">
+            <img src="/assets/images/project2/tool--vs.svg" alt="Visual Studio">
+            <img src="/assets/images/project2/tool--github.svg" alt="Github">
+          </div>
         </div>
-        <div class="project__problem">
-          <h1>Problem</h1>
-          <p>The existing site has become outdated. As the site's user base has grown additional admin features became
-            necessary to maintain and moderate user submitted content.</p>
-        </div>
 
-        <div class="project__tools">
-          <h1>Tools</h1>
-          <img src="/assets/images/project2/tool--xd.svg" alt="Adobe XD">
-          <img src="/assets/images/project2/tool--ae.svg" alt="Adobe After Effects">
-          <img src="/assets/images/project2/tool--ps.svg" alt="Adobe Photoshop">
-          <img src="/assets/images/project2/tool--vs.svg" alt="Visual Studio">
-          <img src="/assets/images/project2/tool--github.svg" alt="Github">
+        <div class="project__image-wrap animated fadeInRight fast">
+          <img src="/assets/images/project3/hero--image.png" alt="hero image">
         </div>
       </div>
+    </section>
 
-      <div class="project__image-wrap">
-        <img src="/assets/images/project3/hero--image.png" alt="hero image">
+    <div class="line"></div>
+
+    <section class="project project--margin-right wow animated fadeInUp">
+      <div class="project__wrapper">
+        <div class="project__image-wrap">
+          <img src="/assets/images/project3/results--1.png" alt="">
+        </div>
+        <div class="project__body">
+          <h1>Chat Widget & Forms</h1>
+          <p class="text text--less-limit">We created a chat widget from the homepage allowing users to schedule a tour
+            from anywhere on the marketing site. I designed the information architecture and prototyped the user flow in
+            Adobe XD.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="line"></div>
 
-  <section class="project">
-    <div class="project__wrapper">
-      <img class="project__images" src="/assets/images/project3/results--1.png" alt="">
+    <div class="line"></div>
 
-      <div class="project__body">
-        <h1>Chat Widget & Forms</h1>
-        <p class="text text--less-limit">We created a chat widget from the homepage allowing users to schedule a tour
-          from anywhere on the marketing site. I designed the information architecture and prototyped the user flow in
-          Adobe XD.</p>
+    <section class="project wow animated fadeInUp">
+      <div class="project__wrapper">
+        <div class="project__body">
+          <h1>New Templates</h1>
+          <p class="text text--less-limit">Reworked many of the marketing sites using the same successful call to
+            actions
+            with a new modern reboot.</p>
+        </div>
+
+        <div class="project__image-wrap project__image-wrap--smaller">
+          <img class="project__images" src="/assets/images/project3/results--2.png" alt="">
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <div class="line"></div>
 
-  <div class="line"></div>
+    <section class="project project--centered-fw wow animated fadeInUp">
 
-  <section class="project">
-    <div class="project__wrapper">
-      <div class="project__body">
-        <h1>New Templates</h1>
-        <p class="text text--less-limit">Reworked many of the marketing sites using the same successful call to actions
-          with a new modern reboot.</p>
+      <div class="project__wrapper project__wrapper--project3">
+        <div class="project__body">
+          <h1>Floorplan Picker</h1>
+          <p class="text--most-limit pb6">We created an interactive template for specific floors of a complex. I created
+            the vector image in illustrator and JQuery/HTML5/SCSS was used for the prototype.</p>
+        </div>
       </div>
 
-      <div class="project__image-wrap project__image-wrap--smaller">
-        <img class="project__images" src="/assets/images/project3/results--2.png" alt="">
+      <div>
+        <img src="/assets/images/project3/results--3.png" alt="wireframe image">
       </div>
-    </div>
-  </section>
-
-  <div class="line"></div>
-
-  <section class="project">
-
-    <div class="project__wrapper project__wrapper--project3">
-      <div class="project__body">
-        <h1>Floorplan Picker</h1>
-        <p class="text--most-limit pb6">We created an interactive template for specific floors of a complex. I created
-          the vector image in illustrator and JQuery/HTML5/SCSS was used for the prototype.</p>
-      </div>
-    </div>
-
-    <div>
-      <img src="/assets/images/project3/results--3.png" alt="wireframe image">
-    </div>
-  </section>
+    </section>
 
 
-  <div class="line"></div>
+    <div class="line"></div>
 
-  <section class="project project--centered">
-    <h1>Results</h1>
-    <p>This sprint was a busy one. The company had a conference and wanted to show off the features in development. We
-      added new floorplan tiles, improved the UX of forms capturing methods and the rent payment user flow.</p>
-    <p>This site gets a ton of traffic so it was important to me to do a good job. with hundreds of unique screens,
-      writing clean reusable code was essential.</p>
+    <section class="project project--centered wow animated fadeInUp">
+      <h1>Results</h1>
+      <p>This sprint was a busy one. The company had a conference and wanted to show off the features in development. We
+        added new floorplan tiles, improved the UX of forms capturing methods and the rent payment user flow.</p>
+      <p>This site gets a ton of traffic so it was important to me to do a good job. with hundreds of unique screens,
+        writing clean reusable code was essential.</p>
 
-    <h2 class="linkto"><a href="http://dev.multifamilybiz.com/"></a></h2>
-  </section>
+      <h2 class="linkto"><a href="http://dev.multifamilybiz.com/"></a></h2>
+    </section>
 
 
 
-  <div class="line"></div>
+    <div class="line"></div>
 
-  <div class="project project--bottom">
-    <h1 class="project__case-studies-header">Case Studies</h1>
-    <div class="project__more-studies">
-      <div class="image-wrapper">
-        <img src="assets/images/project1.png" alt="project1">
-        <a href="project1.html" class="btn btn--orange">Full Case Study</a>
-      </div>
-      <div class="image-wrapper">
-        <img src="assets/images/project2.png" alt="project2">
-        <a href="project2.html" class="btn btn--orange">Full Case Study</a>
-      </div>
-      <div class="image-wrapper">
-        <img src="assets/images/project4.png" alt="project4">
-        <a href="project4.html" class="btn btn--orange">Full Case Study</a>
+    <div class="project project--bottom wow animated fadeInUp">
+      <h1 class="project__case-studies-header">Case Studies</h1>
+      <div class="project__more-studies">
+        <div class="image-wrapper">
+          <img src="assets/images/project1.png" alt="project1">
+          <a href="project1.html" class="btn btn--orange">Full Case Study</a>
+        </div>
+        <div class="image-wrapper">
+          <img src="assets/images/project2.png" alt="project2">
+          <a href="project2.html" class="btn btn--orange">Full Case Study</a>
+        </div>
+        <div class="image-wrapper">
+          <img src="assets/images/project4.png" alt="project4">
+          <a href="project4.html" class="btn btn--orange">Full Case Study</a>
+        </div>
       </div>
     </div>
   </div>
@@ -160,6 +195,24 @@
   <footer>
     <p>Copyright &copy; 2019 Chris Stultz All rights reserved. <a href="#"></p>
   </footer>
+
+  <script src="./assets/scripts/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <script>
+    function openSlideMenu() {
+      document.getElementById('side-menu').style.width = '65vw';
+      document.getElementById('main').style.marginLeft = '65vw';
+    }
+
+    function closeSlideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
 </body>
 
 </html>
