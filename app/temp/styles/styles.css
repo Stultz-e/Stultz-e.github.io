@@ -4820,7 +4820,7 @@ body {
                 -webkit-box-orient: horizontal;
                 -webkit-box-direction: normal;
                     -ms-flex-direction: row;
-                        flex-direction: row  
+                        flex-direction: row
         }
     }
 
@@ -4855,14 +4855,30 @@ body {
 .flex__text {
         padding-left: 2rem;
         -webkit-box-flex: 0;
-            -ms-flex: 0 0 43%;
-                flex: 0 0 43%;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
     }
 
 .flex__image {
         -webkit-box-flex: 0;
-            -ms-flex: 0 0 58%;
-                flex: 0 0 58%;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+
+
+    }
+
+@media (min-width: 37.5em) {
+
+.flex__image.mr {
+                margin-right: 6rem
+        }
+    }
+
+@media (min-width: 37.5em) {
+
+.flex__image.ml {
+                margin-left: 6rem
+        }
     }
 
 .case-study-bg {
@@ -4980,6 +4996,7 @@ body {
                 flex-flow: column nowrap;
         margin: auto;
         max-width: 60rem;
+        padding: 4rem 0;
     }
 
 .project--centered h1 {

@@ -1,6 +1,6 @@
 .flex {
     &__container {
-        
+
         @mixin maxSmall {
             max-width: 100%;
         }
@@ -9,9 +9,9 @@
             @mixin maxSmall {
                 max-width: 100%;
                 flex-direction: row;
-            }  
+            }
         }
-      
+
         @mixin atMedium {
             display: flex;
             align-items: center;
@@ -32,11 +32,24 @@
 
     &__text {
         padding-left: 2rem;
-        flex: 0 0 43%;
+        flex: 0 1 auto;
     }
 
     &__image {
-        flex: 0 0 58%;
+        flex: 0 0 50%;
+
+        &.mr {
+            @mixin atSmall {
+                margin-right: 6rem;
+            }
+        }
+
+        &.ml {
+            @mixin atSmall {
+                margin-left: 6rem;
+            }
+        }
+
+
     }
-  
 }
