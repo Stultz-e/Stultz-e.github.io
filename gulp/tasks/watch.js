@@ -7,21 +7,21 @@ gulp.task('watch', function() {
     browserSync.init({
         /* notify: false, */
         server: {
-            baseDir: "app"
+            baseDir: "STULTZ-E.GITHUB.IO"
         }
     });
 
-    watch('./app/index.html', function() {
+    watch('./index.html', function() {
         browserSync.reload();
     });
 
-    watch('./app/assets/styles/**/*.css', function() {
+    watch('./assets/styles/**/*.css', function() {
         gulp.start('cssInject');
     });
 
 });
 
 gulp.task('cssInject', ['styles'], function() {
-     return gulp.src('./app/temp/styles/styles.css')
+     return gulp.src('./temp/styles/styles.css')
     .pipe(browserSync.stream());
 })
