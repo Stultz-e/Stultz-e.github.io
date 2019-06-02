@@ -1,5 +1,19 @@
+#am {
+    max-width: 70vw;
+    height: 30rem;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 38%;
+
+    @mixin atMedium {
+        min-height: 42rem; 
+    }
+
+}
+
 .about-cover {
-    background-image: url('/assets/images/about-me.png');
+    background-image: url('/assets/images/about.png');
     background-repeat: no-repeat;
     position: relative;
     min-height: 40rem; 

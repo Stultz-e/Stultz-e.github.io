@@ -4494,7 +4494,21 @@ h2 {
     }
 
 .btn--hero {
-        
+        position: absolute;
+        display: inline-block;
+        background-color: #252526;
+        color: #DBDBDB;
+        font-size: 3rem;
+        padding: 1rem 2rem;
+    }
+
+.btn--hero-light {
+        position: absolute;
+        display: inline-block;
+        color: #252526;
+        background-color: #DBDBDB;
+        font-size: 3rem;
+        padding: 1rem 2rem;
     }
 
 footer {
@@ -4621,8 +4635,26 @@ body {
                 font-size: 2.8rem;
             }
 
+#am {
+    max-width: 70vw;
+    height: 30rem;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 38%;
+
+}
+
+@media (min-width: 50em) {
+
+#am {
+        min-height: 42rem
+
+}
+    }
+
 .about-cover {
-    background-image: url('/assets/images/about-me.png');
+    background-image: url('/assets/images/about.png');
     background-repeat: no-repeat;
     position: relative;
     min-height: 40rem;
