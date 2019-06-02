@@ -1,5 +1,19 @@
+#am {
+    max-width: 70vw;
+    height: 30rem;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 38%;
+
+    @mixin atMedium {
+        min-height: 42rem; 
+    }
+
+}
+
 .about-cover {
-    background-image: url('/assets/images/about-me.png');
+    background-image: url('/assets/images/about.png');
     background-repeat: no-repeat;
     position: relative;
     min-height: 40rem; 
@@ -89,10 +103,31 @@
             flex-flow: row nowrap;
         }
 
-        .img-wrap {
-            flex: 0 2 40%;
+        .img-wrap,
+        .vid-wrap {
+            flex: 0 1 40%;
             padding: 1rem;
             margin: auto;
+        }
+
+        .vid-wrap { 
+            position: relative;
+            padding-top: 56.5%;
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+
+            @mixin atSmall {
+                padding-top: 22%;
+            }
+    
+            &__vid {
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
 
         .musician {

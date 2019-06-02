@@ -4,21 +4,28 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    height: 64vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @mixin atSmall {
+        height: 100vh;
+    }
     
     img {
-        max-width: 100%;
-        height: auto;
+        max-width: 90%;
+
+        @mixin atSmall {
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 
 .projects {
     display: flex;
     flex-flow: column;
-    padding: 6rem 0;
 
     @mixin atSmall {
         padding: 8rem 0;

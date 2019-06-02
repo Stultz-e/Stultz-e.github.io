@@ -13,6 +13,20 @@
     }
 
     &--hero {
-        
+        position: absolute;
+        display: inline-block;
+        background-color: #252526;
+        color: #DBDBDB;
+        font-size: 3rem;
+        padding: 1rem 2rem;
+    }
+
+    &--hero-light {
+        position: absolute;
+        display: inline-block;
+        color: #252526;
+        background-color: #DBDBDB;
+        font-size: 3rem;
+        padding: 1rem 2rem;
     }
 }
