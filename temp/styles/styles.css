@@ -4582,13 +4582,13 @@ body {
     }
     }
 
-.navbar__nav li {
+.navbar__nav a {
             padding: 1rem 1.8rem;
         }
 
 @media (min-width: 50em) {
 
-.navbar__nav li {
+.navbar__nav a {
                 padding: 1rem 4rem
         }
     }
@@ -4634,6 +4634,28 @@ body {
                 cursor: pointer;
                 font-size: 2.8rem;
             }
+
+.navbar .dropdown {
+        position: relative;
+    }
+
+.navbar .dropdown__menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: column;
+                    flex-flow: column;
+            background-color: orangered;
+        }
+
+.navbar .dropdown__link {
+
+        }
 
 #am {
     max-width: 70vw;
