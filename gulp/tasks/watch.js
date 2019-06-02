@@ -7,7 +7,7 @@ gulp.task('watch', function() {
     browserSync.init({
         /* notify: false, */
         server: {
-            baseDir: "STULTZ-E.GITHUB.IO"
+            baseDir: "/"
         }
     });
 
