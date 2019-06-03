@@ -75,6 +75,7 @@ body {
         padding: 1rem 0rem;
 
         &__menu {
+            transform: scale(0);
             position: absolute;
             width: 20rem;
             top: 5rem;
@@ -82,12 +83,24 @@ body {
             flex-flow: column;
             background-color: #fff;
             box-shadow: 2px 2px 21px 1px rgba(0,0,0,0.29);
+            transition: transform .3s;
+            transform-origin: top left;
         }
 
         &__link {
             text-align: left;
             padding: 1rem 1rem;
             color: $backgroundBlack;
+
+            &:hover {
+                background-color: orangered;
+                color: #fff;
+            }
         }
     }
+
+    .dropdown:hover .dropdown__menu {
+        transform: scale(1);
+    }
+
 }
