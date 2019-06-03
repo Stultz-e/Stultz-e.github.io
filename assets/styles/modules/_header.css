@@ -1,5 +1,4 @@
 body {
-    overflow-x: hidden;
 }
 
 .logo {
@@ -73,6 +72,7 @@ body {
     .dropdown {
         position: relative;
         padding: 1rem 0rem;
+        z-index: 999;
 
         &__menu {
             transform: scale(0);
@@ -83,7 +83,7 @@ body {
             flex-flow: column;
             background-color: #fff;
             box-shadow: 2px 2px 21px 1px rgba(0,0,0,0.29);
-            transition: transform .3s;
+            transition: transform .3s ease-in-out;
             transform-origin: top left;
         }
 

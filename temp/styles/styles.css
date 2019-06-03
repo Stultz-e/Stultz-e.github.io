@@ -4102,8 +4102,8 @@ html {
 #main {
     -webkit-transition: margin-left 0.5s ease-in-out;
     transition: margin-left 0.5s ease-in-out;
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
 }
 
 ul {
@@ -4536,7 +4536,6 @@ footer p {
     }
 
 body {
-    overflow-x: hidden;
 }
 
 .logo {
@@ -4637,6 +4636,7 @@ body {
 .navbar .dropdown {
         position: relative;
         padding: 1rem 0rem;
+        z-index: 999;
     }
 
 .navbar .dropdown__menu {
@@ -4655,10 +4655,10 @@ body {
             background-color: #fff;
             -webkit-box-shadow: 2px 2px 21px 1px rgba(0,0,0,0.29);
                     box-shadow: 2px 2px 21px 1px rgba(0,0,0,0.29);
-            -webkit-transition: -webkit-transform .3s;
-            transition: -webkit-transform .3s;
-            transition: transform .3s;
-            transition: transform .3s, -webkit-transform .3s;
+            -webkit-transition: -webkit-transform .3s ease-in-out;
+            transition: -webkit-transform .3s ease-in-out;
+            transition: transform .3s ease-in-out;
+            transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
             -webkit-transform-origin: top left;
                     transform-origin: top left;
         }
