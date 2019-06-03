@@ -4556,12 +4556,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
     background-color: #222222;
-    overflow: hidden;
 }
 
 .navbar a {
         color: rgba(255, 255, 255, .8);
-        text-align: center;
         text-decoration: none;
     }
 
@@ -4637,12 +4635,13 @@ body {
 
 .navbar .dropdown {
         position: relative;
+        padding: 1rem 0rem;
     }
 
 .navbar .dropdown__menu {
             position: absolute;
-            top: 0;
-            left: 0;
+            width: 20rem;
+            top: 5rem;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -4650,11 +4649,15 @@ body {
             -webkit-box-direction: normal;
                 -ms-flex-flow: column;
                     flex-flow: column;
-            background-color: orangered;
+            background-color: #fff;
+            -webkit-box-shadow: 2px 2px 21px 1px rgba(0,0,0,0.29);
+                    box-shadow: 2px 2px 21px 1px rgba(0,0,0,0.29);
         }
 
 .navbar .dropdown__link {
-
+            text-align: left;
+            padding: 1rem 1rem;
+            color: #222222;
         }
 
 #am {
