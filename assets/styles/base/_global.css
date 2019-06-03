@@ -1,7 +1,6 @@
 html {
     font-size: 52.5%;
 
-
     @mixin atSmall {
         font-size: 53.5%;
     }
