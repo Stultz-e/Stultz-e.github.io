@@ -10,8 +10,6 @@
 
         &--margin-bottom {
             margin-bottom: 8rem;
-            display: hidden;
-            background-color: transparent;
 
             @mixin atSmall {
                 margin-bottom: 12rem;

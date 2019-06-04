@@ -4536,6 +4536,7 @@ footer p {
     }
 
 body {
+
 }
 
 .logo {
@@ -4682,7 +4683,7 @@ body {
 #am {
     max-width: 70vw;
     height: 30rem;
-    z-index: 9999;
+    z-index: 2;
     position: absolute;
     top: 0;
     right: 38%;
@@ -4972,8 +4973,6 @@ body {
 
 .case-study-bg .line--margin-bottom {
             margin-bottom: 8rem;
-            display: hidden;
-            background-color: transparent;
         }
 
 @media (min-width: 37.5em) {
@@ -5352,4 +5351,28 @@ body {
 .project__case-studies-header {
         padding-bottom: 2rem;
         text-align: center !important;
+    }
+
+.research-cover {
+    background-image: url('/assets/images/about.png');
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 40rem;
+
+}
+
+@media (min-width: 50em) {
+
+.research-cover {
+        background-size: cover
+
+}
+    }
+
+@media (min-width: 75em) {
+
+.research-cover {
+        min-height: 42rem
+
+}
     }
