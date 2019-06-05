@@ -128,9 +128,9 @@
     WOW.prototype.defaults = {
       boxClass: 'wow',
       animateClass: 'animated',
-      offset: 100,
+      offset: 0,
       mobile: false,
-      live: false,
+      live: true,
       callback: null
     };
 
@@ -452,7 +452,6 @@
     WOW.prototype.disabled = function() {
       return !this.config.mobile && this.util().isMobile(navigator.userAgent);
     };
-
 
     return WOW;
 

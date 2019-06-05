@@ -8,11 +8,4 @@ function openSlideMenu() {
     document.getElementById('main').style.marginLeft = '0';
   }
                    
- var wow = new WOW ({
-    boxClass:     'wow',      // default
-    animateClass: 'animated', // default
-    offset:       5,          // default
-    mobile:       true,       // default
-    live:         true        // default
-  })
-  wow.init();
+

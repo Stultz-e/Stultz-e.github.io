@@ -4207,7 +4207,7 @@ img {
     }
 
 .cover {
-    background-image: url('/assets/images/hero-bg.png');
+    background-image: url('/assets/images/hero-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -4526,6 +4526,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    z-index: 999;
     
 }
 
@@ -4699,7 +4700,7 @@ body {
     }
 
 .about-cover {
-    background-image: url('/assets/images/about.png');
+    background-image: url('/assets/images/about.jpg');
     background-repeat: no-repeat;
     position: relative;
     min-height: 40rem;
