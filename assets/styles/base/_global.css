@@ -1,6 +1,7 @@
 html {
     font-size: 52.5%;
 
+
     @mixin atSmall {
         font-size: 53.5%;
     }
@@ -17,7 +18,7 @@ html {
 #main {
     transition: margin-left 0.5s ease-in-out;
     width: 100%;
-    overflow: hidden;
+
 }
 
 ul {
@@ -45,11 +46,19 @@ ul {
 }
 
 .pt8 {
-    padding-top: 8rem !important;
+    padding-top: 8rem;
+
+    @mixin maxSmall {
+        padding-top: 4rem;
+    }
+
 }
 
 .pt6 {
     padding-top: 6rem;
+}
+.pt0 {
+    padding-top: 0 !important;
 }
 
 .pb8 {

@@ -51,20 +51,20 @@
         max-width: 60.5rem;
     }
 
-
     &--less-limit {
         max-width: 44.9rem;
     }
 }
 
-
 /* MAIN CONTAINER, SETS THE BEGINNING OF THE CONTAINER */   
 .project {
     margin-left: auto;
     padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: -2rem;
-    overflow: hidden;
+    
+    @mixin maxSmall {
+        padding-left: 2rem; 
+        padding-right: 2rem;
+    }
 
     &--margin-right {
         margin-right: auto;
@@ -103,11 +103,6 @@
  /* MAIN CONTAINER, SETS THE flexflow */   
     &__wrapper {
 
-        @mixin maxSmall {
-            padding-right: 2rem;
-            margin-right: -2rem;
-        }
-
         @mixin atSmall {
             display: flex;
             flex-flow: nowrap;
@@ -129,10 +124,7 @@
         align-items: flex-start;
         flex: 0 1 auto;
         position: relative;
-
-        &--even {
-            justify-content: space-evenly !important;
-        }
+        z-index: 1;
 
         &--project3 {
             flex-flow: row nowrap;
@@ -144,6 +136,7 @@
 
         &__images {
             flex: 0 1 auto;
+            
             &:not(:last-child) {
                 padding-bottom: 5rem;
             }

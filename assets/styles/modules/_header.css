@@ -13,6 +13,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    z-index: 9999;
     background-color: $backgroundBlack;
 
     a {
@@ -86,6 +88,7 @@ body {
             box-shadow: 2px 2px 21px 1px rgba(0,0,0,0.29);
             transition: transform .3s ease-in-out;
             transform-origin: top left;
+            z-index: 10000000000;
         }
 
         &__link {

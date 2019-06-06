@@ -45,6 +45,10 @@
         display: flex;
         flex-flow: column nowrap;
 
+        @mixin maxSmall {
+            padding: 2rem;
+        }
+
         @mixin atSmall {
             padding: 8rem 0;
             align-items: center;

@@ -4103,7 +4103,7 @@ html {
     -webkit-transition: margin-left 0.5s ease-in-out;
     transition: margin-left 0.5s ease-in-out;
     width: 100%;
-    overflow: hidden;
+
 }
 
 ul {
@@ -4139,11 +4139,24 @@ ul {
 }
 
 .pt8 {
-    padding-top: 8rem !important;
+    padding-top: 8rem;
+
 }
+
+@media (max-width: 37.5em) {
+
+.pt8 {
+        padding-top: 4rem
+
+}
+    }
 
 .pt6 {
     padding-top: 6rem;
+}
+
+.pt0 {
+    padding-top: 0 !important;
 }
 
 .pb8 {
@@ -4283,6 +4296,13 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-flow: column nowrap;
                 flex-flow: column nowrap;
+    }
+
+@media (max-width: 37.5em) {
+
+.projects__content {
+            padding: 2rem
+    }
     }
 
 @media (min-width: 37.5em) {
@@ -4556,6 +4576,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
+    z-index: 9999;
     background-color: #222222;
 
 }
@@ -4663,6 +4685,7 @@ body {
             transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
             -webkit-transform-origin: top left;
                     transform-origin: top left;
+            z-index: 10000000000;
         }
 
 .navbar .dropdown__link {
@@ -4895,20 +4918,9 @@ body {
 @media (max-width: 37.5em) {
 
 .flex__container {
-            max-width: 100%
+            padding: 2rem
 
     }
-    }
-
-@media (max-width: 37.5em) {
-
-.flex__container__reversed {
-                max-width: 100%;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: row;
-                        flex-direction: row
-        }
     }
 
 @media (min-width: 50em) {
@@ -4952,6 +4964,15 @@ body {
                 flex: 0 0 50%;
 
 
+    }
+
+@media (max-width: 37.5em) {
+
+.flex__image {
+            margin-right: -2rem
+
+
+    }
     }
 
 @media (min-width: 37.5em) {
@@ -5036,11 +5057,16 @@ body {
 
 .project {
     margin-left: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: -2rem;
-    overflow: hidden;  
+    padding-left: 2rem;  
 }
+
+@media (max-width: 37.5em) {
+
+.project {
+        padding-left: 2rem; 
+        padding-right: 2rem  
+}
+    }
 
 .project--margin-right {
         margin-right: auto;
@@ -5100,14 +5126,6 @@ body {
 
 /* MAIN CONTAINER, SETS THE flexflow */
 
-@media (max-width: 37.5em) {
-
-.project__wrapper {
-            padding-right: 2rem;
-            margin-right: -2rem    
-    }
-    }
-
 @media (min-width: 37.5em) {
 
 .project__wrapper {
@@ -5150,13 +5168,8 @@ body {
             -ms-flex: 0 1 auto;
                 flex: 0 1 auto;
         position: relative;
+        z-index: 1;
     }
-
-.project__body--even {
-            -webkit-box-pack: space-evenly !important;
-                -ms-flex-pack: space-evenly !important;
-                    justify-content: space-evenly !important;
-        }
 
 .project__body--project3 {
             -webkit-box-orient: horizontal;
@@ -5214,7 +5227,7 @@ body {
     height: 100vh;
     width:0;
     position:fixed;
-    z-index:1;
+    z-index: 1;
     top:0;
     left:0;
     background-color:#111;
@@ -5298,7 +5311,7 @@ body {
 
 @media (min-width: 37.5em) {
     .open-slide {
-      display:none
+      display:none;
     }
     }
 
@@ -5312,8 +5325,15 @@ body {
         -webkit-box-flex: 0;
             -ms-flex: 0 2 auto;
                 flex: 0 2 auto;
-        padding-top: 4rem;
         margin-left: auto;    
+    }
+
+@media (max-width: 37.5em) {
+
+.project__image-wrap {
+            padding-top: 6rem;
+            margin-right: -2rem    
+    }
     }
 
 .project__image-wrap--smaller {

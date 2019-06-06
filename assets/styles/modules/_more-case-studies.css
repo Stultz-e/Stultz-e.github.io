@@ -8,8 +8,12 @@
 
     &__image-wrap {
         flex: 0 2 auto;
-        padding-top: 4rem;
         margin-left: auto;
+
+        @mixin maxSmall {
+            padding-top: 6rem;
+            margin-right: -2rem;
+        }
     
         &--smaller {
             flex: 1 0 100%;
