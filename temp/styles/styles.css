@@ -4139,7 +4139,7 @@ ul {
 }
 
 .pt8 {
-    padding-top: 8rem;
+    padding-top: 8rem !important;
 }
 
 .pt6 {
@@ -4388,7 +4388,7 @@ img {
     }
 
 .projects__content .text h2 {
-                line-height: 1;
+                line-height: 1.3;
             }
 
 .projects__content .text span {
@@ -5003,14 +5003,14 @@ body {
 
 .case-study-bg h2 {
         text-align: left; 
-        line-height: 1;
+        line-height: 1.3;
     }
 
 .case-study-bg h1 {
         font-size: 6rem;
         text-align: left;
         color: #BCBCBC;
-        line-height: 1;
+        line-height: 1.1;
         margin: 0;
     }
 
@@ -5036,7 +5036,9 @@ body {
 
 .project {
     margin-left: auto;
-    padding-left: 2rem;  
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: -2rem;  
 }
 
 .project--margin-right {
@@ -5081,7 +5083,14 @@ body {
                 flex-flow: column nowrap;
         margin: auto;
         max-width: 60rem;
-        padding: 4rem 0;
+        padding: 4rem 2rem;
+    }
+
+@media (min-width: 37.5em) {
+
+.project--centered {
+            padding: 4rem 0
+    }
     }
 
 .project--centered h1 {
@@ -5090,6 +5099,14 @@ body {
 
 /* MAIN CONTAINER, SETS THE flexflow */
 
+@media (max-width: 37.5em) {
+
+.project__wrapper {
+            padding-right: 2rem;
+            margin-right: -2rem    
+    }
+    }
+
 @media (min-width: 37.5em) {
 
 .project__wrapper {
@@ -5097,8 +5114,7 @@ body {
             display: -ms-flexbox;
             display: flex;
             -ms-flex-flow: nowrap;
-                flex-flow: nowrap
-        
+                flex-flow: nowrap    
     }
     }
 

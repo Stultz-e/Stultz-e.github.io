@@ -45,7 +45,7 @@ ul {
 }
 
 .pt8 {
-    padding-top: 8rem;
+    padding-top: 8rem !important;
 }
 
 .pt6 {
