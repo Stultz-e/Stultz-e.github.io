@@ -76,7 +76,7 @@
     <div id="side-menu" class="side-nav">
       <div class="side-nav__links">
         <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="/contact.html">Case Studies</a>
+        <a href="/index.html">Case Studies</a>
         <a href="/research.html">Research</a>
         <a href="/cv.html">CV</a>
         <a href="/about.html">About</a>
@@ -209,7 +209,17 @@
 
 <script src="./assets/scripts/app.js"></script>
 <script src="./assets/scripts/wow.js"></script>
-<script>new WOW().init();</script>
+<script>
+new WOW().init();
+var scrolled = false;
+$(window).on('scroll', function() {
+if (!scrolled) {
+scrolled = true;
+wow.init();
+}
+})
+</script>
+
 
 </body>
 
