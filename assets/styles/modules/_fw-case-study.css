@@ -1,7 +1,6 @@
 .flex {
     &__container {
 
-
         @mixin maxSmall {
             max-width: 100%;
         }
