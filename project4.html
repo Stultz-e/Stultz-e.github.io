@@ -179,25 +179,25 @@
 
     <div class="line"></div>
 
-    <div class="project project--bottom wow animated fadeInUp"> <!-- block bottom -->
+    <div class="project project--bottom wow animated fadeInRight"> <!-- block bottom -->
       <h1 class="project__case-studies-header">Case Studies</h1>
       <div class="project__more-studies">
         <div class="image-wrapper">
-          <img src="assets/images/project1.png" alt="project1">
+          <img src="assets/images/project1.jpg" alt="project1">
           <a href="project1.html" class="btn btn--orange">Project 1</a>
         </div>
         <div class="image-wrapper">
-          <img src="assets/images/project2.png" alt="project2">
+          <img src="assets/images/project2.jpg" alt="project2">
           <a href="project2.html" class="btn btn--orange">Project 2</a>
         </div>
         <div class="image-wrapper">
-          <img src="assets/images/project3.png" alt="project3">
+          <img src="assets/images/project3.jpg" alt="project3">
           <a href="project3.html" class="btn btn--orange">Project 3</a>
         </div>
       </div>
     </div>
 
-    <footer class="animated fadeInUp">
+    <footer class="wow animated fadeIn">
       <p>Copyright &copy; 2019 Chris Stultz All rights reserved. <a href="#"></p>
     </footer>
   </div>
@@ -207,15 +207,14 @@
   <script>new WOW().init();</script>
 
   <script>
-    
-    function openSlideMenu() {
-      document.getElementById('side-menu').style.width = '65vw';
-      document.getElementById('main').style.marginLeft = '65vw';
-    }
-    function closeSlideMenu() {
-      document.getElementById('side-menu').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
-    }
-  </script>
+      new WOW().init();
+      var scrolled = false;
+      $(window).on('scroll', function() {
+      if (!scrolled) {
+      scrolled = true;
+      wow.init();
+      }
+  })
+</script>
 
 </html>
