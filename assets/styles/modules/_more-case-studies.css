@@ -41,7 +41,7 @@
     
         @mixin atSmall {
             flex-flow: row;
-            margin-bottom: 10rem;
+            margin-bottom: 8rem;
         }
     
         .image-wrapper {

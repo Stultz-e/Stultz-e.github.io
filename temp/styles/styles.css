@@ -5386,7 +5386,7 @@ body {
             -webkit-box-direction: normal;
                 -ms-flex-flow: row;
                     flex-flow: row;
-            margin-bottom: 10rem
+            margin-bottom: 8rem
     }
     }
 
@@ -5401,18 +5401,16 @@ body {
     }
 
 .research-cover {
-    background-image: url('/assets/images/about.png');
+    background-image: url('/assets/images/research/research.jpg');
     background-repeat: no-repeat;
     position: relative;
     min-height: 40rem;
-
 }
 
 @media (min-width: 50em) {
 
 .research-cover {
         background-size: cover
-
 }
     }
 
@@ -5420,6 +5418,9 @@ body {
 
 .research-cover {
         min-height: 42rem
-
 }
     }
+
+.research-head {
+    line-height: .15;
+}

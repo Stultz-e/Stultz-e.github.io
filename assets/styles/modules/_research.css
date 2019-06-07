@@ -1,5 +1,5 @@
 .research-cover {
-    background-image: url('/assets/images/about.png');
+    background-image: url('/assets/images/research/research.jpg');
     background-repeat: no-repeat;
     position: relative;
     min-height: 40rem; 
@@ -11,5 +11,10 @@
     @mixin atLarge {
         min-height: 42rem; 
     }
-
 }
+
+.research-head {
+    line-height: .15;
+}
+
+
