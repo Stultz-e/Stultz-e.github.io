@@ -91,6 +91,12 @@
         max-width: 60rem;
         padding: 4rem 2rem;
 
+        .center {
+            @mixin atSmall {
+                text-align: center;
+            }
+        }
+
         @mixin atSmall {
             padding: 4rem 0;
         }
@@ -125,6 +131,16 @@
         flex: 0 1 auto;
         position: relative;
         z-index: 1;
+
+        &--clear {
+            justify-content: center;
+            margin-top: 0rem;
+
+            @mixin atSmall {
+                justify-content: flex-start;
+                margin-top: 10rem;  
+            }
+        }
 
         &--project3 {
             flex-flow: row nowrap;
@@ -168,6 +184,12 @@
         
         img {
             margin-right: 1rem;
+
+            @mixin maxSmall {
+                height: 4rem;
+            }
         }
     }  
 }
+
+

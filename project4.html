@@ -94,7 +94,7 @@
   <div id="main">
     <section class="project pt8">
       <div class="project__wrapper">
-        <div class="project__body">
+        <div class="project__body project__body--clear ">
           <div class="project__header animated fadeInUp">
             <h1>Case Study #4</h1>
             <h2>Features Build Out</h2>
@@ -123,7 +123,7 @@
 
     <div class="line line--margin-bottom"></div>
 
-    <div class="flex__container wow animated fadeInUp"> <!-- block 1 -->
+    <div class="flex__container flex__container--end wow animated fadeInUp"> <!-- block 1 -->
       <div class="flex__text">
         <h1>Company Website</h1>
         <p>I built this 5 page site using materialize a CSS framework. I added some animations, custom graphics and made
@@ -138,7 +138,7 @@
 
     <div class="line"></div>
 
-    <div class="flex__container mr wow animated fadeInUp">
+    <div class="flex__container flex__container--start mr wow animated fadeInUp">
       <div class="flex__image mr">
         <img src="/assets/images/project4/results--2.png" alt="result image">
       </div>
@@ -154,12 +154,12 @@
 
     <div class="line"></div>
 
-    <div class="flex__container wow animated fadeInUp">
+    <div class="flex__container flex__container--end wow animated fadeInUp">
       <div class="flex__text">
         <h1>Animated Logos</h1>
         <p >A company affiliate needed a new logo for their marketing revamp. They needed an animated umbrella which I
           designed in Illustrator, animated in After Effects and used a  JavaScript plugin called "Lottie.js" which creates a JSON file that 
-        animates web friendly vectors</p>
+        animates web friendly vectors.</p>
       </div>
 
       <div class="flex__image ml">
@@ -205,16 +205,5 @@
   <script src="./assets/scripts/app.js"></script>
   <script src="./assets/scripts/wow.js"></script>
   <script>new WOW().init();</script>
-
-  <script>
-      new WOW().init();
-      var scrolled = false;
-      (window).on('scroll', function() {
-      if (!scrolled) {
-      scrolled = true;
-      wow.init();
-      }
-  })
-</script>
 
 </html>

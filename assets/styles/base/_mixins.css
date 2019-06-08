@@ -10,6 +10,12 @@
     }
 }
 
+@define-mixin maxMed {
+    @media (max-width: 50em) {
+        @mixin-content;
+    }
+}
+
 @define-mixin atMedium {
     @media (min-width: 50em) {
         @mixin-content;
