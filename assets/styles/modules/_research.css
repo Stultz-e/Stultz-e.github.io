@@ -55,12 +55,22 @@
     &__app-wrap {
         display: flex;
         align-items: center;
+        flex-direction: column;
 
+    
+        @mixin atLarge {
+            flex-direction: row;
+        }
     }
 
     .reverse {
-        flex-direction: row-reverse !important;
+        flex-direction: row-reverse;
         align-items: center;
+        flex-direction: column;
+
+        @mixin atLarge {
+            flex-direction: row;
+        }
     }
     
     &__image {
