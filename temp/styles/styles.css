@@ -4099,6 +4099,31 @@ html {
 }
     }
 
+h1 {
+    font-size: 3.4rem;
+}
+
+@media (min-width: 37.5em) {
+
+h1 {
+        font-size: 4rem
+}
+    }
+
+@media (min-width: 50em) {
+
+h1 {
+        font-size: 5rem
+}
+    }
+
+@media (min-width: 75em) {
+
+h1 {
+        font-size: 8rem
+}
+    }
+
 #main {
     -webkit-transition: margin-left 0.5s ease-in-out;
     transition: margin-left 0.5s ease-in-out;
@@ -4130,6 +4155,17 @@ ul {
             justify-content: center;
 }
 
+.mt8 {
+    margin-top: 4rem;
+}
+
+@media (min-width: 37.5em) {
+
+.mt8 {
+        margin-top: 10rem
+}
+    }
+
 .pb10 {
     padding-bottom: 10rem;
 }
@@ -4140,14 +4176,23 @@ ul {
 
 .pt8 {
     padding-top: 8rem;
-
 }
 
 @media (max-width: 37.5em) {
 
 .pt8 {
         padding-top: 4rem
+}
+    }
 
+.pt4 {
+    padding-top: 4rem;  
+}
+
+@media (min-width: 37.5em) {
+
+.pt4 {
+        padding-top: 6rem  
 }
     }
 
@@ -4160,16 +4205,32 @@ ul {
 }
 
 .pb8 {
-    padding-bottom: 8rem;
+    padding-top: 4rem;
+
 }
+
+@media (min-width: 37.5em) {
+
+.pb8 {
+        padding-bottom: 8rem
+
+}
+    }
 
 .pb6 {
     padding-bottom: 6rem;
 }
 
 .pb4 {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;  
 }
+
+@media (min-width: 37.5em) {
+
+.pb4 {
+        padding-bottom: 4rem  
+}
+    }
 
 .pb3 {
     padding-bottom: 3rem;
@@ -4224,6 +4285,39 @@ img {
 
 .ml-md {
         margin-left: 5.5rem
+}
+    }
+
+.title {
+    font-size: 8rem;
+
+
+}
+
+@media (min-width: 37.5em) {
+
+.title {
+        font-size: 8rem
+
+
+}
+    }
+
+@media (min-width: 50em) {
+
+.title {
+        font-size: 10rem
+
+
+}
+    }
+
+@media (min-width: 75em) {
+
+.title {
+        font-size: 12rem
+
+
 }
     }
 
@@ -4450,7 +4544,7 @@ h1 {
     font-family: 'Neuton', serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 5em;
+    font-size: 3.8rem;
     color: #EBEBEB;
     text-align: center;
     line-height: 0;
@@ -4460,7 +4554,7 @@ h1 {
 @media (min-width: 37.5em) {
 
 h1 {
-        font-size: 7.75em;
+        font-size: 5rem;
         margin: 10rem 0 0
 }
     }
@@ -4468,14 +4562,14 @@ h1 {
 @media (min-width: 50em) {
 
 h1 {
-        font-size: 7.75em
+        font-size: 5.5rem
 }
     }
 
 @media (min-width: 75em) {
 
 h1 {
-        font-size: 8.75em
+        font-size: 6rem
 }
     }
 
@@ -4830,23 +4924,32 @@ body {
         position: relative;
     }
 
-.about__block h1 {
+.about__block h1 {   
             margin: 0;
             line-height: 1;
             text-align: left;
+            font-size: 5rem;
         }
 
 @media (min-width: 37.5em) {
 
 .about__block h1 {
-                font-size: 7.75em
+                font-size: 8rem
         }
     }
 
 .about__block h2 {
-            line-height: .5;
             text-align: left;
+            
         }
+
+@media (min-width: 37.5em) {
+
+.about__block h2 {
+                line-height: .5
+            
+        }
+    }
 
 .about__block p {
             max-width: 60rem;
@@ -4972,7 +5075,7 @@ body {
         }
 
 .flex__text {
-        padding-left: 2rem;
+        padding-left: 1rem;
         -webkit-box-flex: 1;
             -ms-flex: 1 1 auto;
                 flex: 1 1 auto;
@@ -5045,11 +5148,17 @@ body {
 
 .case-study-bg h2 {
         text-align: left; 
-        line-height: 1.3;
+        line-height: .5;
+    }
+
+@media (max-width: 50em) {
+
+.case-study-bg h2 {
+            line-height: 1
+    }
     }
 
 .case-study-bg h1 {
-        font-size: 6rem;
         text-align: left;
         color: #BCBCBC;
         line-height: 1.1;
@@ -5227,6 +5336,10 @@ body {
             color: #666666;
         }
 
+.project__body li {
+            max-width: 55rem;
+        }
+
 .project__body__images {
             -webkit-box-flex: 0;
                 -ms-flex: 0 1 auto;
@@ -5262,6 +5375,10 @@ body {
 
 .project__tools h1 {
             margin-bottom: 2rem;
+        }
+
+.project__tools p {
+            max-width: 50rem;
         }
 
 .project__tools img {
@@ -5486,6 +5603,19 @@ body {
     max-width: 100%;
 }
 
+.research p {
+        max-width: 55rem;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+@media (max-width: 37.5em) {
+
+.research {
+        padding: 0 2rem
+}
+    }
+
 @media (max-width: 50em) {
 
 .research__wrapper {
@@ -5524,14 +5654,26 @@ body {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column;       
-        -webkit-box-align: center;       
-            -ms-flex-align: center;       
-                align-items: center;   
-        -webkit-box-flex: 0;   
-            -ms-flex: 0 1 auto;   
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
                 flex: 0 1 auto;
     }
+
+.research__img--docs {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 26%;
+                    flex: 0 1 26%;
+        }
+
+.research__img--30rem {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 30rem;
+                    flex: 0 1 30rem;
+        }
 
 @media (min-width: 37.5em) {
 
@@ -5564,31 +5706,23 @@ body {
     }
 
 .research .reverse {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: row-reverse;
-                flex-direction: row-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        -ms-flex-direction: column;
-            flex-direction: column;
     }
 
 @media (min-width: 75em) {
 
 .research .reverse {
             -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse
     }
-    }
-
-.research__image {
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
     }
 
 @media (min-width: 37.5em) {
@@ -5600,11 +5734,22 @@ body {
     }
     }
 
+.research__image--papers {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+        }
+
 .research__text {
-        padding: 1rem;
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
+        padding: 0 2rem 0 1rem;
+    }
+
+@media (max-width: 37.5em) {
+
+.research__text {
+            max-width: 37rem;
+            margin: auto
+    }
     }
 
 @media (min-width: 37.5em) {
@@ -5614,6 +5759,24 @@ body {
                 -ms-flex: 0 0 50%;
                     flex: 0 0 50%
     }
+    }
+
+.research__text--papers {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+
+        }
+
+@media (min-width: 37.5em) {
+
+.research__text--papers {
+                max-width: 50rem;
+                -webkit-box-flex: 0;
+                    -ms-flex: 0 0 45%;
+                        flex: 0 0 45%
+
+        }
     }
 
 .research .flex-container {
@@ -5628,3 +5791,44 @@ body {
 .center {
     text-align: center !important;
 }
+
+.takeaways {
+    background-color: #464646;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+}
+
+.takeaways h1 {
+        text-align: center;
+        color: #f6f6f6;
+    }
+
+.takeaways ul {
+        margin-top: 2rem;
+        max-width: 60rem;
+        color: #f6f6f6;
+    }
+
+@media (max-width: 37.5em) {
+
+.takeaways ul {
+            padding: 2rem
+    }
+    }
+
+.takeaways li {
+        padding: 1rem 0;
+    }

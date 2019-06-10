@@ -1,0 +1,31 @@
+html {
+    font-size: 52.5%;
+
+    @mixin atSmall {
+        font-size: 53.5%;
+    }
+
+    @mixin atMedium {
+        font-size: 60.5%;
+    }
+
+    @mixin atLarge {
+        font-size: 64.2%;
+    }
+}
+
+h1 {
+    font-size: 3.4rem;
+
+    @mixin atSmall {
+        font-size: 4rem;
+    }
+
+    @mixin atMedium {
+        font-size: 5rem;
+    }
+
+    @mixin atLarge {
+        font-size: 8rem;
+    }
+}

@@ -1,20 +1,3 @@
-html {
-    font-size: 52.5%;
-
-
-    @mixin atSmall {
-        font-size: 53.5%;
-    }
-
-    @mixin atMedium {
-        font-size: 60.5%;
-    }
-
-    @mixin atLarge {
-        font-size: 64.2%;
-    }
-}
-
 #main {
     transition: margin-left 0.5s ease-in-out;
     width: 100%;
@@ -37,6 +20,14 @@ ul {
     justify-content: center;
 }
 
+.mt8 {
+    margin-top: 4rem;
+
+    @mixin atSmall {
+        margin-top: 10rem;
+    }
+}
+
 .pb10 {
     padding-bottom: 10rem;
 }
@@ -51,7 +42,14 @@ ul {
     @mixin maxSmall {
         padding-top: 4rem;
     }
+}
 
+.pt4 {
+    padding-top: 4rem;
+
+    @mixin atSmall {
+        padding-top: 6rem;
+    }  
 }
 
 .pt6 {
@@ -62,7 +60,12 @@ ul {
 }
 
 .pb8 {
-    padding-bottom: 8rem;
+    padding-top: 4rem;
+
+    @mixin atSmall {
+        padding-bottom: 8rem;
+    }
+
 }
 
 .pb6 {
@@ -70,7 +73,11 @@ ul {
 }
 
 .pb4 {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+
+    @mixin atSmall {
+        padding-bottom: 4rem;
+    }  
 }
 
 .pb3 {
@@ -125,6 +132,24 @@ img {
     @mixin atSmall {
         margin-left: 5.5rem;
     }
+}
+
+.title {
+    font-size: 8rem;
+
+    @mixin atSmall {
+        font-size: 8rem;
+    }
+
+    @mixin atMedium {
+        font-size: 10rem;
+    }
+
+    @mixin atLarge {
+        font-size: 12rem;
+    }
+
+
 }
 
 

@@ -85,19 +85,23 @@
         align-items: center;
         position: relative;
 
-        h1 {
+        h1 {   
             margin: 0;
             line-height: 1;
             text-align: left;
-    
+            font-size: 5rem;
+
             @mixin atSmall {
-                font-size: 7.75em;
+                font-size: 8rem
             }
         }
     
         h2 {
-            line-height: .5;
             text-align: left;
+            @mixin atSmall {
+                line-height: .5;
+            }
+            
         }
     
         p {
