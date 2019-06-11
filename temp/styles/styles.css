@@ -4622,15 +4622,26 @@ h2 {
         color: #DBDBDB;
         font-size: 3rem;
         padding: 1rem 2rem;
+        left: 10%;
+        z-index: 400;
+        top: 50vh;
     }
 
 .btn--hero-light {
-        position: absolute;
-        display: inline-block;
-        color: #252526;
-        background-color: #DBDBDB;
-        font-size: 3rem;
-        padding: 1rem 2rem;
+        display: none;
+    }
+
+@media (min-width: 50em) {
+
+.btn--hero-light {
+            position: absolute;
+            display: inline-block;
+            color: #252526;
+            background-color: #DBDBDB;
+            font-size: 3rem;
+            padding: 1rem 2rem;
+            right: 10%
+    }
     }
 
 footer {
@@ -5661,16 +5672,12 @@ body {
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
                 flex: 0 1 auto;
-
-
     }
 
 @media (min-width: 37.5em) {
 
 .research__img {
             padding-right: 8rem
-
-
     }
     }
 

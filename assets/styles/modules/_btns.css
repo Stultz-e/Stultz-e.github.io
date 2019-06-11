@@ -19,14 +19,22 @@
         color: #DBDBDB;
         font-size: 3rem;
         padding: 1rem 2rem;
+        left: 10%;
+        z-index: 400;
+        top: 50vh;
     }
 
     &--hero-light {
-        position: absolute;
-        display: inline-block;
-        color: #252526;
-        background-color: #DBDBDB;
-        font-size: 3rem;
-        padding: 1rem 2rem;
+        display: none;
+        @mixin atMedium {
+            position: absolute;
+            display: inline-block;
+            color: #252526;
+            background-color: #DBDBDB;
+            font-size: 3rem;
+            padding: 1rem 2rem;
+            right: 10%;
+
+        }
     }
 }
