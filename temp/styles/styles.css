@@ -5661,6 +5661,17 @@ body {
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
                 flex: 0 1 auto;
+
+
+    }
+
+@media (min-width: 37.5em) {
+
+.research__img {
+            padding-right: 8rem
+
+
+    }
     }
 
 .research__img--docs {
@@ -5675,12 +5686,12 @@ body {
                     flex: 0 1 30rem;
         }
 
-@media (min-width: 37.5em) {
-
-.research__img {
-            padding-right: 8rem
-    }
-    }
+.research__img--50percent {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 50rem;
+                    flex: 0 1 50rem;
+            padding-right: 0;
+        }
 
 .research__app-wrap {
         display: -webkit-box;

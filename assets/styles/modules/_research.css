@@ -57,6 +57,10 @@
         align-items: center;
         flex: 0 1 auto;
 
+        @mixin atSmall {
+            padding-right: 8rem;
+        }
+
         &--docs {
             flex: 0 1 26%;
         }
@@ -65,16 +69,18 @@
             flex: 0 1 30rem;
         }
 
-        @mixin atSmall {
-            padding-right: 8rem;
+        &--50percent {
+            flex: 0 1 50rem;
+            padding-right: 0;
         }
+
+
     }
 
     &__app-wrap {
         display: flex;
         align-items: center;
         flex-direction: column;
-
 
         @mixin atLarge {
             flex-direction: row;
