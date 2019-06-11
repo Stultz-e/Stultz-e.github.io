@@ -4616,15 +4616,22 @@ h2 {
     }
 
 .btn--hero {
-        position: absolute;
-        display: inline-block;
-        background-color: #252526;
-        color: #DBDBDB;
-        font-size: 3rem;
-        padding: 1rem 2rem;
-        left: 10%;
-        z-index: 400;
-        top: 50vh;
+        display: none;
+    }
+
+@media (min-width: 50em) {
+
+.btn--hero {
+            position: absolute;
+            display: inline-block;
+            background-color: #252526;
+            color: #DBDBDB;
+            font-size: 3rem;
+            padding: 1rem 2rem;
+            left: 10%;
+            z-index: 400;
+            top: 50vh
+    }
     }
 
 .btn--hero-light {
@@ -4640,7 +4647,8 @@ h2 {
             background-color: #DBDBDB;
             font-size: 3rem;
             padding: 1rem 2rem;
-            right: 10%
+            right: 10%;
+            top: 50vh
     }
     }
 
