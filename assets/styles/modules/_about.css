@@ -85,6 +85,14 @@
         align-items: center;
         position: relative;
 
+        @mixin atSmall {
+            padding: 6rem 0;
+        }
+
+        @mixin atMedium {
+            padding: 8rem 0;
+        }
+
         h1 {   
             margin: 0;
             line-height: 1;
