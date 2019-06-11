@@ -4630,7 +4630,8 @@ h2 {
             padding: 1rem 2rem;
             left: 10%;
             z-index: 400;
-            top: 50vh
+            top: 50vh;
+            opacity: .8
     }
     }
 
@@ -4648,7 +4649,8 @@ h2 {
             font-size: 3rem;
             padding: 1rem 2rem;
             right: 10%;
-            top: 50vh
+            top: 50vh;
+            opacity: .7
     }
     }
 
