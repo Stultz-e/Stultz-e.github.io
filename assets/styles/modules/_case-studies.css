@@ -1,6 +1,5 @@
 .case-study-bg {
     background: $projectBg;
-
     /* line that separates the sections */
     .line {
         height: 1px;
@@ -20,7 +19,6 @@
             margin: 8rem 0;
         }
     }
-
     /* LEFT ALIGN HEADERS TO NON CENTERED IN JUSTIFIED FLEXBOX */    
     h2 {
         text-align: left; 
@@ -38,9 +36,7 @@
         margin: 0;
     }
 }
-
 /* MAX WIDTH FOR TEXT BOXES TO MATCH STYLE GUIDE */   
-
 .text {
     &--limit {
     max-width: 45.5rem;
@@ -58,7 +54,6 @@
         max-width: 44.9rem;
     }
 }
-
 /* MAIN CONTAINER, SETS THE BEGINNING OF THE CONTAINER */   
 .project {
     margin-left: auto;
@@ -108,7 +103,6 @@
             text-align: left;
         }
     }
-
  /* MAIN CONTAINER, SETS THE flexflow */   
     &__wrapper {
 
@@ -169,7 +163,6 @@
             padding-bottom: 2rem;
         }
     }
-    
      /* Hero section pt.2 */
     &__problem {
         padding: 0;
@@ -182,7 +175,6 @@
             max-width: 56.5rem;
         }
     }
-
    /* Hero section pt.3 */
     &__tools {
         h1 {

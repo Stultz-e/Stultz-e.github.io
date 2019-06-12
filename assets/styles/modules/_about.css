@@ -69,7 +69,7 @@
 
     &__block {
         display: flex; 
-        padding: 12rem 0;
+        padding: 4rem 0;
         max-width: 117rem;
         margin: 0 auto;
         flex-flow: column wrap;
@@ -80,8 +80,11 @@
             padding: 6rem 0;
         }
         @mixin atMedium {
-            padding: 8rem 0;
+          padding: 8rem 0;
         }
+        @mixin atLarge {
+            padding: 12rem 0;
+          }
 
         h1 {   
             margin: 0;
