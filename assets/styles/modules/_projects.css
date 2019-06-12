@@ -13,8 +13,11 @@
         height: 100vh;
     }
     
-    img {
+    &__img {
         max-width: 90%;
+        position: relative;
+        animation: moveInBottom 1s ease-in-out;
+        z-index: 5;
 
         @mixin atSmall {
             max-width: 100%;
