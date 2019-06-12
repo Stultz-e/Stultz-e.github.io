@@ -13,6 +13,7 @@
     align-items: flex-start;
     overflow-x: hidden;
     transition: 0.3s ease-in-out;
+    z-index: 9000;
 
     &__links {
       display: flex;

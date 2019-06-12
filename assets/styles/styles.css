@@ -1,9 +1,9 @@
 @import "normalize.css";
+@import "base/_mixins.css";
 @import "animate.css";
 @import "base/_animation.css";
 @import "base/_typography.css";
 @import "base/_variables.css";
-@import "base/_mixins.css";
 @import "base/_global.css";
 @import "modules/_projects.css";
 @import "modules/_text.css";
