@@ -4771,20 +4771,19 @@ h2 {
 
 .btn--hero {
             position: absolute;
+            font-style: italic;
             display: inline-block;
-            background-color: #252526;
-            color: #DBDBDB;
-            font-size: 2.4rem;
+            color: #fff;
+            font-size: 4rem;
             padding: 1rem 3rem;
             left: 15%;
             z-index: 400;
             top: 40vh;
-            border-radius: 8px;
+            opacity: .8;
             z-index: 0;
-            -webkit-box-shadow: 10px 7px 22px -8px rgba(0,0,0,0.54);
-                    box-shadow: 10px 7px 22px -8px rgba(0,0,0,0.54);
             -webkit-animation: moveInBottom 1s ease-in-out;
-                    animation: moveInBottom 1s ease-in-out
+                    animation: moveInBottom 1s ease-in-out;
+            display: none
     }
     }
 
@@ -4796,20 +4795,18 @@ h2 {
 
 .btn--hero-light {
             position: absolute;
+            font-style: italic;
             display: inline-block;
-            color: #252526;
-            background-color: #DBDBDB;
-            font-size: 2.4rem;
+            color: #fff;
+            font-size: 4rem;
             padding: 1rem 2rem;
             right: 18%;
             top: 60vh;
-            border-radius: 8px;
-            background-color: #fff;
             z-index: 0;
-            -webkit-box-shadow: 10px 7px 22px -8px rgba(0,0,0,0.54);
-                    box-shadow: 10px 7px 22px -8px rgba(0,0,0,0.54);
+            opacity: .8;
             -webkit-animation: moveInBottom 1s ease-in-out;
-                    animation: moveInBottom 1s ease-in-out
+                    animation: moveInBottom 1s ease-in-out;
+            display: none
     }
     }
 
