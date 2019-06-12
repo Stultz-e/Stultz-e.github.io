@@ -1,6 +1,5 @@
 .flex {
     &__container {
-
         &--end {
             justify-content: flex-end;  
         }
@@ -28,7 +27,6 @@
             margin-right: auto;
             margin-left: 0;
         }
-
     }
 
     &__text {
@@ -55,7 +53,5 @@
                 margin-left: 6rem;
             }
         }
-
-
     }
 }

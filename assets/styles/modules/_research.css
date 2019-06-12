@@ -63,10 +63,20 @@
 
         &--docs {
             flex: 0 1 26%;
+
+            @mixin maxSmall {
+                margin-top: 2rem;
+            }
         }
 
         &--30rem {
             flex: 0 1 30rem;
+
+            img {
+                @mixin maxSmall {
+                    margin-top: 2rem;
+                }
+            }
         }
 
         &--50percent {
@@ -95,6 +105,9 @@
     }
 
     &__image {
+        @mixin maxSmall {
+            margin-top: 2rem;
+        }
 
         @mixin atSmall {
             flex: 0 1 50%;
