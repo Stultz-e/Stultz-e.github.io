@@ -13,39 +13,68 @@
     }
 
     &--hero {
-        display: none;
-        @mixin atLarge {
-            position: absolute;
-            font-style: italic;
-            display: inline-block;
-            color: #fff;
-            font-size: 4rem;
-            padding: 1rem 3rem;
-            left: 15%;
-            z-index: 400;
-            top: 40vh;
-            opacity: .8;
-            z-index: 0;
-            animation: moveInBottom 1s ease-in-out;
+        position: absolute;
+        font-style: italic;
+        display: inline-block;
+        color: #D6D6D6;
+        position: absolute;
+        font-style: italic;
+        background-color: #252526;
+        z-index: 400;
+        padding: 1rem 2rem;
+        opacity: 1;
+        animation: moveInBottom 1s ease-in-out; 
+
+        @mixin maxSmall {
             display: none;
+        }
+
+        @mixin atSmall {
+            left: 3vw; 
+            font-size: 2.8vw;  
+            top: 40vh;
+        }
+
+        @mixin atMedium {
+            left: 12vw; 
+            font-size: 2vw;
+        }
+
+        @mixin atLarge {
+            font-size: 1.8vw;
+            left: 8vw;
+
         }
     }
 
     &--hero-light {
-        display: none;
-        @mixin atLarge {
-            position: absolute;
-            font-style: italic;
-            display: inline-block;
-            color: #fff;
-            font-size: 4rem;
-            padding: 1rem 2rem;
-            right: 18%;
-            top: 60vh;
-            z-index: 0;
-            opacity: .8;
-            animation: moveInBottom 1s ease-in-out;
+        position: absolute;
+        font-style: italic;
+        color: #252526;
+        background: #D6D6D6;
+        padding: 1rem 2rem;
+        opacity: 1;
+        animation: moveInBottom 1s ease-in-out;
+        z-index: 400;
+
+        @mixin maxSmall {
             display: none;
+        }
+
+        @mixin atSmall {
+            right: 5vw; 
+            font-size: 2.8vw;  
+        }
+ 
+        @mixin atMedium {
+            right: 8vw;
+            font-size: 2vw;
+        }
+
+        @mixin atLarge {
+            font-size: 1.8vw;
+            right: 10vw;
+            top: 60vh;
         }
     }
 }

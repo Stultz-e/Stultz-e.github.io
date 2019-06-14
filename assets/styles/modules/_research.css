@@ -27,7 +27,6 @@
 
     p {
         max-width: 55rem;
-        margin: auto;
         margin-top: 1rem;
     }
 
@@ -90,6 +89,10 @@
         align-items: center;
         flex-direction: column;
 
+        @mixin maxMed {
+            flex-direction: column-reverse;
+        }
+
         @mixin atLarge {
             flex-direction: row;
         }
@@ -98,6 +101,10 @@
     .reverse {
         flex-direction: column;
         align-items: center;
+
+        @mixin maxMed {
+            flex-direction: column-reverse; 
+        }
 
         @mixin atLarge {
             flex-direction: row-reverse;

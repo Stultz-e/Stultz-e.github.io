@@ -8,6 +8,20 @@ ul {
     padding: 0;
 }
 
+.m0 {
+    margin-right: 0 !important;
+}
+
+.m-2 {
+    margin-right: -2rem !important;
+}
+
+.flex-reverse {
+    @mixin maxMed {
+        flex-direction: column-reverse !important;
+    }
+}
+
 .flex-direction-col {
     flex-direction: column;
 }
@@ -55,7 +69,11 @@ ul {
     padding-top: 4rem;
     @mixin atSmall {
         padding-top: 8rem;
-    }  
+    }
+    
+    &--smallonly {
+        padding-top: 4rem;
+    }
 }
 
 .pb8 {

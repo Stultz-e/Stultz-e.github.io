@@ -6,6 +6,18 @@
         width: 100%;
         background-color: $lineColor;
         margin: 4rem 0;
+  
+        @mixin atSmall {
+            margin: 8rem 0;
+        }
+
+        &--no-margin {
+            margin: 0 0 4rem 0;
+
+            @mixin atSmall {
+                margin: 0 0 8rem 0;
+            }
+        }
 
         &--margin-bottom {
             margin-bottom: 8rem;
@@ -13,10 +25,6 @@
             @mixin atSmall {
                 margin-bottom: 12rem;
             }
-        }
-
-        @mixin atSmall {
-            margin: 8rem 0;
         }
     }
     /* LEFT ALIGN HEADERS TO NON CENTERED IN JUSTIFIED FLEXBOX */    
@@ -89,7 +97,7 @@
         padding: 4rem 2rem;
 
         .center {
-            @mixin atSmall {
+            @mixin maxSmall {
                 text-align: center;
             }
         }
@@ -105,9 +113,15 @@
  /* MAIN CONTAINER, SETS THE flexflow */   
     &__wrapper {
 
+        @mixin maxSmall {
+            display: flex; 
+            flex-flow: column;
+            align-items: center;
+        }
+        
+
         @mixin atSmall {
             display: flex;
-            flex-flow: nowrap;
         }
         
         &--project2 {
@@ -115,7 +129,17 @@
         }
 
         &--project3 {
-            flex-flow: column;
+            @mixin maxSmall {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            img {
+                @mixin maxSmall {
+                    padding-bottom: 2rem;
+                } 
+            }
         }    
     }
 
@@ -176,6 +200,11 @@
     }
    /* Hero section pt.3 */
     &__tools {
+
+        @mixin atSmall {
+            padding: 0 0 8rem 0;
+        }
+
         h1 {
             margin-bottom: 2rem;
         }

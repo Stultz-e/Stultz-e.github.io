@@ -41,16 +41,16 @@
 
     &__social {
       display: flex;
-      padding-left: 3.5rem;
+      padding-left: 2.5rem;
 
       a {
         text-decoration: none;
-        font-size: 4rem;
+        font-size: 3.5rem;
         color: #fff;
         transition: 0.3s;  
 
         &:not(:last-child) {
-          padding-right: 3.5rem;
+          padding-right: 2.5rem;
       }
 
         &:hover{

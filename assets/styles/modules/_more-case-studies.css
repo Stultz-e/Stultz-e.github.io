@@ -3,16 +3,19 @@
     &--bottom {
         padding: 2rem 0;
         max-width: 100%;
-        margin: auto;
+
+        @mixin maxSmall {
+            padding: 2rem 0 6rem;
+        }
     }
 
     &__image-wrap {
         flex: 0 2 auto;
         margin-left: auto;
+        padding-top: 2rem;
 
         @mixin maxSmall {
             padding-top: 6rem;
-            margin-right: -2rem;
         }
     
         &--smaller {

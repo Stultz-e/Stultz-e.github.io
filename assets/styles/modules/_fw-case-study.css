@@ -1,19 +1,12 @@
 .flex {
     &__container {
-        &--end {
-            justify-content: flex-end;  
-        }
-
-        &--start {
-            justify-content: flex-start;
-        }
+        display: flex;
 
         @mixin maxSmall {
             padding: 2rem;
         }
 
         @mixin atMedium {
-            display: flex;
             align-items: center;
             margin-left: auto;
             max-width: 100%;
@@ -23,6 +16,22 @@
             max-width: 85%;
         }
 
+        &--end {
+            justify-content: flex-end;  
+
+            @mixin maxMed {
+                flex-direction: column-reverse;
+            }
+        }
+
+        &--start {
+            justify-content: flex-start;
+
+            @mixin maxMed {
+                flex-direction: column;
+            }
+        }
+
         &.mr {
             margin-right: auto;
             margin-left: 0;
@@ -30,13 +39,25 @@
     }
 
     &__text {
-        padding-left: 1rem;
         flex: 1 1 auto;
         max-width: 55rem;
+        margin: auto;
+
+        @mixin maxSmall {
+            margin-top: 2rem;
+        }
+
+        @mixin atSmall {
+            padding-left: 1rem;
+        }
     }
 
     &__image {
         flex: 0 0 50%;
+
+        &--ml {
+            margin-left: -2rem;
+        }
 
         @mixin maxSmall {
             margin-right: -2rem;
