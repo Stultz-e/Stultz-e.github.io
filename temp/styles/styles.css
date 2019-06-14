@@ -4734,8 +4734,7 @@ h2 {
 @media (min-width: 37.5em) {
 
 h2 {
-        font-size: 2.4rem;
-        line-height: 0
+        font-size: 2.4rem
 
 }
     }
@@ -5322,14 +5321,13 @@ footer p {
 /* LEFT ALIGN HEADERS TO NON CENTERED IN JUSTIFIED FLEXBOX */
 
 .case-study-bg h2 {
-        text-align: left; 
-        line-height: .5;
+        text-align: left;
     }
 
 @media (max-width: 50em) {
 
 .case-study-bg h2 {
-            line-height: 1
+            line-height: 1.3
     }
     }
 

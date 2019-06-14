@@ -22,10 +22,9 @@
     /* LEFT ALIGN HEADERS TO NON CENTERED IN JUSTIFIED FLEXBOX */    
     h2 {
         text-align: left; 
-        line-height: .5;
 
         @mixin maxMed {
-            line-height: 1;
+            line-height: 1.3;
         }
     }
 
