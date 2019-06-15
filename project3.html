@@ -92,7 +92,6 @@
       <a href="/about.html">About</a>
     </div>
 
-
     <div class="side-nav__social">
       <a href="https://www.linkedin.com/in/chrisstultzux/" target="_blank"><i class="fab fa-linkedin"></i></a>
 
@@ -104,6 +103,7 @@
     </div>
   </div>
 
+  <div id="main">
     <section class="project pt8">
       <div class="project__wrapper">
         <div class="project__body project__body--project2">
@@ -126,7 +126,7 @@
           </div>
         </div>
 
-        <div class="project__image-wrap m-2 m-2--mobile animated fadeInRight">
+        <div class="project__image-wrap m-2 animated fadeInRight">
           <img src="/assets/images/project3/hero--image.png" alt="hero image">
         </div>
       </div>
@@ -189,8 +189,8 @@
       <p>This sprint was a busy one. The company had a conference and wanted to show off the features in development. We
         added new floorplan tiles, improved the UX of forms capturing methods and the rent payment user flow.</p>
       <p>This site gets a ton of traffic so it was important to me to do a good job. with hundreds of unique screens,
-        writing clean reusable code was essential.</p>
-
+        writing clean reusable code was essential.
+      </p>
     </section>
 
     <div class="line"></div>
@@ -217,21 +217,12 @@
       </div>
         
       <footer>
-          <p>Copyright &copy; 2019 Chris Stultz All rights reserved. <a href="#"></p>
+          <p>Copyright &copy; 2019 Chris Stultz All rights reserved.<a href="#"></p>
       </footer>
     
       <script src="./assets/scripts/wow.js"></script>
       <script src="./assets/scripts/app.js"></script>
-      <script>
-          new WOW().init();
-          var scrolled = false;
-          $(window).on('scroll', function() {
-          if (!scrolled) {
-          scrolled = true;
-          wow.init();
-          }
-      })
-    </script>
+      <script>new WOW().init();</script>
 </body>
 
 </html>
