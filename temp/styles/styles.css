@@ -4462,7 +4462,7 @@ img {
 @media (min-width: 37.5em) {
 
 .mb-md {
-        margin-top: 7.5rem
+        margin-top: 5.5rem
 }
     }
 
@@ -4765,6 +4765,7 @@ h2 {
     font-style: italic;
     font-weight: 400;
     color: #464646;
+    margin-top: .8rem;
 
 }
 

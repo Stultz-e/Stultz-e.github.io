@@ -179,7 +179,7 @@ img {
 
 .mb-md {
     @mixin atSmall {
-        margin-top: 7.5rem;
+        margin-top: 5.5rem;
     }
 }
 
