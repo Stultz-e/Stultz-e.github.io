@@ -4255,6 +4255,17 @@ ul {
     margin-right: -2rem !important;
 }
 
+.m-2--mobile {
+        margin-right: 0 !important;
+    }
+
+@media (max-width: 37.5em) {
+
+.m-2--mobile {
+            margin-right: -2rem !important
+    }
+    }
+
 @media (max-width: 50em) {
 
 .flex-reverse {
