@@ -4200,7 +4200,7 @@ html {
 @media (min-width: 50em) {
 
 html {
-        font-size: 60.5%
+        font-size: 53.5%
 }
     }
 
@@ -4729,11 +4729,18 @@ h1 {
 @media (min-width: 50em) {
 
 h1 {
-        font-size: 5.5rem
+        font-size: 4.5rem
 }
     }
 
 @media (min-width: 75em) {
+
+h1 {
+        font-size: 5rem
+}
+    }
+
+@media (min-width: 85em) {
 
 h1 {
         font-size: 6rem
@@ -5956,7 +5963,7 @@ footer p {
 
 .research p {
         max-width: 55rem;
-        margin-top: 1rem;
+        margin: 1rem auto 0 auto;
     }
 
 @media (max-width: 37.5em) {

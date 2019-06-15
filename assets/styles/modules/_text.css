@@ -21,10 +21,14 @@ h1 {
     }
 
     @mixin atMedium {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
     }
 
     @mixin atLarge {
+        font-size: 5rem;
+    }
+
+    @mixin atLarger {
         font-size: 6rem;
     }
 }

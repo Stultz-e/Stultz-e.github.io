@@ -6,7 +6,7 @@ html {
     }
 
     @mixin atMedium {
-        font-size: 60.5%;
+        font-size: 53.5%;
     }
 
     @mixin atLarge {

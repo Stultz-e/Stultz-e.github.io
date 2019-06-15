@@ -27,7 +27,7 @@
 
     p {
         max-width: 55rem;
-        margin-top: 1rem;
+        margin: 1rem auto 0 auto;
     }
 
     @mixin maxSmall {
