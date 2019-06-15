@@ -160,19 +160,15 @@
 
 .takeaways {
     background-color: $mainBlack;
-    height: 50vh;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: column nowrap;
     align-items: center;
-    width: 100vw;
+    padding: 4rem 0;
 
     h1 {
         text-align: center;
         color: #f6f6f6;
     }
-
-
 
     ul {
         margin-top: 2rem;
