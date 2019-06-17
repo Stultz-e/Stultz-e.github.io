@@ -5778,7 +5778,7 @@ footer p {
     overflow-x: hidden;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    z-index: 9000;
+    z-index: 999999;
   }
 
 .side-nav__links {
