@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -7,32 +7,39 @@
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous">
   </script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141975841-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-141975841-1');
   </script>
 
-<link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Neuton:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Neuton:400i" rel="stylesheet">
   <link rel="stylesheet" href="temp/styles/styles.css">
   <title>Project 3</title>
   <meta name="keywords" content="Chris Stultz UX/UI designer portfolio">
   <meta name="" content="This is my playground where I test and break things">
-    <!-- Hotjar Tracking Code for https://stultz-e.github.io/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1348860,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1348860,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 </head>
 
 <body class="case-study-bg">
@@ -53,13 +60,13 @@
 
     <div class="navbar__nav">
       <div class="dropdown">
-          <a class="active" href="/index.html">Case Studies</a>  
-          <div class="dropdown__menu">
-              <a href="project1.html" class="dropdown__link">Prototyping Workflow</a>
-              <a href="project2.html" class="dropdown__link">Multifamilybiz</a>
-              <a href="project3.html" class="dropdown__link">Product Features</a>
-              <a href="project4.html" class="dropdown__link">Custom Templates</a>
-          </div>
+        <a class="active" href="/index.html">Case Studies</a>
+        <div class="dropdown__menu">
+          <a href="project1.html" class="dropdown__link">Prototyping Workflow</a>
+          <a href="project2.html" class="dropdown__link">Multifamilybiz</a>
+          <a href="project3.html" class="dropdown__link">Product Features</a>
+          <a href="project4.html" class="dropdown__link">Custom Templates</a>
+        </div>
       </div>
 
       <a href="/research.html">Research</a>
@@ -113,7 +120,8 @@
           </div>
           <div class="project__problem animated fadeInUp">
             <h1>Problem</h1>
-            <p>To stay relevant with the competition We needed to Upgrade our platform to include industry standard features such as floorpickers, 3D floorplans and background videos.</p>
+            <p>To stay relevant with the competition We needed to Upgrade our platform to include industry standard
+              features such as floorpickers, 3D floorplans and background videos.</p>
           </div>
 
           <div class="project__tools animated fadeInUp">
@@ -196,33 +204,35 @@
     <div class="line"></div>
 
     <div class="project project--bottom wow animated fadeInUp">
-        <div class="flex-direction-col">
-          <h1 class="project__case-studies-header">Case Studies</h1>
-            <div class="project__more-studies">
-              <div class="image-wrapper">
-                <img src="assets/images/project1.jpg" alt="project1">
-                <a href="project1.html" class="btn btn--orange">Project 1</a>
-              </div>
-              <div class="image-wrapper">
-                <img src="assets/images/project3.jpg" alt="project3">
-                <a href="project3.html" class="btn btn--orange">Project 3</a>
-              </div>
-              <div class="image-wrapper">
-                <img src="assets/images/project4.jpg" alt="project4">
-                <a href="project4.html" class="btn btn--orange">Project 4</a>
-              </div>
-            </div>
+      <div class="flex-direction-col">
+        <h1 class="project__case-studies-header">Case Studies</h1>
+        <div class="project__more-studies">
+          <div class="image-wrapper">
+            <img src="assets/images/project1.jpg" alt="project1">
+            <a href="project1.html" class="btn btn--orange">Project 1</a>
+          </div>
+          <div class="image-wrapper">
+            <img src="assets/images/project3.jpg" alt="project3">
+            <a href="project3.html" class="btn btn--orange">Project 3</a>
+          </div>
+          <div class="image-wrapper">
+            <img src="assets/images/project4.jpg" alt="project4">
+            <a href="project4.html" class="btn btn--orange">Project 4</a>
           </div>
         </div>
       </div>
-        
-      <footer>
-          <p>Copyright &copy; 2019 Chris Stultz All rights reserved.<a href="#"></p>
-      </footer>
-    
-      <script src="./assets/scripts/wow.js"></script>
-      <script src="./assets/scripts/app.js"></script>
-      <script>new WOW().init();</script>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright &copy; 2019 Chris Stultz All rights reserved.<a href="#"></p>
+  </footer>
+
+  <script src="./assets/scripts/wow.js"></script>
+  <script src="./assets/scripts/app.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
-</html>
+</html> -->
