@@ -74,6 +74,7 @@ module.exports = merge(common, {
                     {
                         loader: 'file-loader',
                         options: {
+                            esModule: false,
                             context: 'src',
                             name: (resourcePath) => {
                                 if(/node_modules/.test(resourcePath)) {
@@ -103,12 +104,13 @@ module.exports = merge(common, {
                         loader: 'file-loader',
                         options: {
                             esModule: false,
-                            // name: (resourcePath) => {
-                            //     if (/node_modules/.test(resourcePath)) {
-                            //         return 'images/[name].[ext]';
-                            //     }
-                            //     return '[path][name].[ext]';
-                            // }
+                            context: 'src',
+                            name: (resourcePath) => {
+                                if (/node_modules/.test(resourcePath)) {
+                                    return 'images/[name].[ext]';
+                                }
+                                return '[path][name].[ext]';
+                            }
                         },
                     }
                 ]

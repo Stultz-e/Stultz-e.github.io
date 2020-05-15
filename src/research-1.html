@@ -45,25 +45,19 @@
           </li>
         </ul>
         <div class="social-media-links ml-sm-auto py-5 py-md-0">
-          <a class="mx-2" href="mailto: cstultz@oswego.edu" target="_blank"><img class="inject-me"
-              src="/src/images/icons/envelope.svg" alt="My Email Address"></a>
-          <a class="mx-2" href="tel:607-333-1500" target="_blank"><img class="inject-me"
-              src="/src/images/icons/phone.svg" alt="My Phone"></a>
-          <a class="mx-2" href="https://github.com/Stultz-e" target="_blank"><img class="inject-me"
-              src="/src/images/icons/github.svg" alt="My Github"></a>
-          <a class="mx-2" href="https://dribbble.com/cstultzux" target="_blank"><img class="inject-me"
-              src="/src/images/icons/dribbble.svg" alt="My Dribbble"></a>
-          <a class="mx-2" href="https://www.behance.net/cstultz06a1" target="_blank"><img class="inject-me"
-              src="/src/images/icons/behance.svg" target="_blank" alt="My Behance"></a>
-          <a class="mx-2" href="https://www.linkedin.com/in/chrisstultzux/"><img class="inject-me"
-              src="/src/images/icons/linkedin.svg" alt="My Linkedin"></a>
+          <a class="mx-2" href="mailto: cstultz@oswego.edu" target="_blank"><img class="inject-me" alt="My Email Address" src="<%=require("./images/icons/envelope.svg")%>"></a>
+          <a class="mx-2" href="tel:607-333-1500" target="_blank"><img class="inject-me" src="<%=require("./images/icons/phone.svg")%>"></a>         
+          <a class="mx-2" href="https://github.com/Stultz-e" target="_blank"><img class="inject-me" alt="My Github" src="<%=require("./images/icons/github.svg")%>"> </a>
+          <a class="mx-2" href="https://dribbble.com/cstultzux" target="_blank"><img class="inject-me" alt="My Dribbble" src="<%=require("./images/icons/dribbble.svg")%>"></a>
+          <a class="mx-2" href="https://www.behance.net/cstultz06a1" target="_blank"><img class="inject-me" target="_blank" alt="My Behance" src="<%=require("./images/icons/behance.svg")%>"></a>
+          <a class="mx-2" href="https://www.linkedin.com/in/chrisstultzux"><img class="inject-me" target="_blank" alt="My Linkedin" src="<%=require("./images/icons/linkedin.svg")%>"></a> 
         </div>
       </div>
     </nav>
   </header>
 
   <article class="mt-4">
-    <section class="project project--1 pt-lg-12 pt-7">
+    <section class="project project--1 pt-lg-12 pt-7" style="background-image: url('./images/research1/vrguy.png');">
       <div class="container" data-aos="zoom-up">
         <div class="row">
           <div class="col-lg-7">
@@ -153,13 +147,14 @@
         <div class="project__wrap text-center">
           <h2 class="display-2 pb-5">Tools for User Testing</h2>
           <div class="row">
-            <div class="col-lg-4 col-md-6 py-5 py-lg-0"><img class="img-fluid" src="/src/images/research1/GearVr.png"
-                alt="GearVr"><span class="d-block text-center h3 mt-3">Gear VR</span></div>
-            <div class="col-lg-4 col-md-6 py-5 py-lg-0"><img class="img-fluid"
-                src="/src/images/research1/SamsungEdge.png" alt="Samsung Edge"><span
-                class="d-block text-center h3 mt-3">Samsung Edge 7</span></div>
-            <div class="col-lg-4 col-md-6 py-5 py-lg-0"><img class="img-fluid" src="/src/images/research1/OculusApp.png"
-                alt="Oculus App"><span class="d-block text-center h3 mt-3">Oculus Apps</span></div>
+            <div class="col-lg-4 col-md-6 py-5 py-lg-0"><img class="img-fluid" alt="GearVr" src="<%=require("./images/research1/GearVr.png")%>"> 
+               <span class="d-block text-center h3 mt-3">Gear VR</span></div>
+            <div class="col-lg-4 col-md-6 py-5 py-lg-0"><img class="img-fluid" alt="Samsung Edge"
+                src="<%require("./images/research1/SamsungEdge.png")%>">
+              <span class="d-block text-center h3 mt-3">Samsung Edge 7</span></div>
+            <div class="col-lg-4 col-md-6 py-5 py-lg-0"><img class="img-fluid" alt="Oculus App" src="<%require("./images/research1/OculusApp.png")%>">
+              <span class="d-block text-center h3 mt-3">Oculus Apps</span>
+            </div>
           </div>
         </div>
       </div>
@@ -175,14 +170,14 @@
             <p>User is stationary with control of the camera with head movement</p>
           </div>
           <div class="col-md-5 offset-md-1 order-1 order-md-2">
-            <img class="img-fluid" src="/src/images/research1/TheWallStreet.jpg" alt="">
+            <img class="img-fluid" alt="" src="<%=require("./images/research1/TheWallStreet.jpg")%>">
           </div>
         </div>
 
 
         <div class="row py-5 align-items-center">
           <div class="col-md-5 offset-md-1 order-2 order-md-1 mt-4 mt-lg-0">
-            <img class="img-fluid" src="/src/images/research1/LandsEnd.jpg" alt="">
+            <img class="img-fluid" alt="" src="<%=require("./images/research1/LandsEnd.jpg")%>">
           </div>
 
           <div class="col-md-5 offset-md-1  order-md-1 order-2  mt-4 mt-lg-0">
@@ -200,7 +195,7 @@
             <p>User controls movement with Gear VR controls (analog).</p>
           </div>
           <div class="col-md-5 offset-md-1  order-md-2 order-1">
-            <img class="img-fluid" src="/src/images/research1/OceanRift.jpg" alt="">
+            <img class="img-fluid" alt="" src="<%=require("./images/research1/OceanRift.jpg")%>">
           </div>
         </div>
       </div>
@@ -217,14 +212,14 @@
               relationship between interaction type and symptoms of simulation sickness.</p>
           </div>
           <div class="col-md-5 offset-md-1 order-1 order-md-2">
-            <img class="img-fluid" src="/src/images/research1/ssq.png" alt="">
+            <img class="img-fluid" alt="" src="<%=require("./images/research1/ssq.png")%>">
           </div>
         </div>
 
 
         <div class="row py-5 align-items-center">
           <div class="col-md-5 offset-md-1 order-2 order-md-1 mt-4 mt-lg-0">
-            <img class="img-fluid" src="/src/images/research1/sus.png" alt="">
+            <img class="img-fluid" alt="" src="<%=require("./images/research1/sus.png")%>">
           </div>
 
           <div class="col-md-5 offset-md-1  order-md-1 order-2  mt-4 mt-lg-0">
@@ -242,7 +237,7 @@
             <p>To evaluate which user experience is scored most enjoyable.</p>
           </div>
           <div class="col-md-5 offset-md-1  order-md-2 order-1">
-            <img class="img-fluid" src="/src/images/research1/3apps.png" alt="">
+            <img class="img-fluid" alt="" src="<%=require("./images/research1/3apps.png")%>"> 
           </div>
         </div>
 
@@ -295,15 +290,10 @@
           </div>
       </div>
   </div>
-
-
   </section>
   </article>
-
   <footer class="bg-dark text-white text-center py-4">
     <span span id="year"></span> <span>Copyright © Designed and Developed by Chris Stultz </span>
   </footer>
-
 </body>
-
 </html>
