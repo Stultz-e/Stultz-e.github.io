@@ -103,12 +103,13 @@ module.exports = merge(common, {
                         loader: 'file-loader',
                         options: {
                             context: 'src',
-                            name: (resourcePath) => {
-                                if (/node_modules/.test(resourcePath)) {
-                                    return 'images/[name].[ext]';
-                                }
-                                return '[path][name].[ext]';
-                            }
+                            esModule: false,
+                            // name: (resourcePath) => {
+                            //     if (/node_modules/.test(resourcePath)) {
+                            //         return 'images/[name].[ext]';
+                            //     }
+                            //     return '[path][name].[ext]';
+                            // }
                         },
                     }
                 ]
