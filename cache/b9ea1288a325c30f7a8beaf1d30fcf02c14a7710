@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Chris Stultz Portfolio</title>
+  <link href="css/theme.css" rel="stylesheet"><link href="css/frontpage.css" rel="stylesheet"></head>
+  <body class="bg-light">
+      <header class="fixed-top">
+        <nav id="header" class="navbar navbar-expand-md navbar-dark bg-dark">          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-sm-auto mt-4 mt-sm-0">
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link active" href="index.html">Home</a>
+              </li>
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item dropdown px-lg-2">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Research
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item py-2 my-1" href="research-1.html">Interaction Design in VR</a>
+                  <a class="dropdown-item py-2 my-1" href="research-2.html">eCommerce Usability Testing</a>
+                </div>
+              </li>
+                <li class="nav-item dropdown px-lg-2">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item py-2 my-1" href="project-1.html">Pinnacle Design Lab Website</a>
+                      <a class="dropdown-item py-2 my-1" href="project-2.html">Susco</a>
+                      <a class="dropdown-item py-2 my-1" href="project-3.html">Altrac Design System</a>
+                      <a class="dropdown-item py-2 my-1" href="project-4.html">Elect@</a>
+                    </div>
+                </li>
+              </ul>
+              <div class="social-media-links ml-sm-auto py-5 py-md-0">
+                  <a class="mx-2" href="mailto: cstultz@oswego.edu" target="_blank"><img class="inject-me" src="/src/images/icons/envelope.svg" alt="My Email Address"></a>
+                  <a class="mx-2" href="tel:607-333-1500" target="_blank"><img class="inject-me" src="/src/images/icons/phone.svg" alt="My Phone"></a>         
+                  <a class="mx-2" href="https://github.com/Stultz-e" target="_blank"><img class="inject-me" src="/src/images/icons/github.svg" alt="My Github"></a>
+                  <a class="mx-2" href="https://dribbble.com/cstultzux" target="_blank"><img class="inject-me" src="/src/images/icons/dribbble.svg" alt="My Dribbble"></a>
+                  <a class="mx-2" href="https://www.behance.net/cstultz06a1" target="_blank"><img class="inject-me" src="/src/images/icons/behance.svg" target="_blank" alt="My Behance"></a>
+                  <a class="mx-2" href="https://www.linkedin.com/in/chrisstultzux/"><img class="inject-me" src="/src/images/icons/linkedin.svg" alt="My Linkedin"></a>
+              </div>
+            </div>
+        </nav>
+      </header>
+
+      <article class="mt-4">
+        <section class="project project--1 py-lg-12 py-7">
+          <div class="container" data-aos="zoom-in-down">
+              <div class="row">
+                  <div class="col-lg-7">
+                    <div class="project__heading">
+                        <h2 class="display-2 projects__header mb-0 pb-2">VR Interaction Modes</h2>
+                        <p class="h3 font-italic mt-lg-n1">Testing Three VR Apps</p>
+                      </div>
+          
+                      <div class="project__wrap">
+                          <h2 class="display-2 mb-1 projects__header">Summary</h2>
+                          <p>
+                              VR Experience Testing is a research project that seeks to test different modes of interaction in a 3D environment. The Gear VR was used with three apps and a diverse participant group. Virtual reality is still in it's infancy stages and understanding how users respond to different modes of interaction can assist future design and development in VR applications.  
+                          </p>
+                      </div>
+          
+                      <div class="project__wrap ">
+                          <h2 class="display-2 mb-1 projects__header">Tasks & Responsibilities</h2>
+                            <ul>
+                                <li>Facilitating usability tests, statistical analysis.</li>
+                                <li>Qualitative data collection</li>
+                            </ul>
+                      </div>
+
+                    <div class="project__wrap ">
+                        <h2 class="display-2 mb-1 projects__header">Design Tools / UX Methods</h2>
+                        <p>System Usability Scale, Nielsen Heuristics, SPSS, Gazepoint Eye tracker</p>
+                    </div>
+
+                    <div class="project__wrap ">
+                        <h2 class="display-2 mb-1 projects__header">Research Stages</h2>
+                        <h3>Step 1: Literature Review</h3>
+                        <p>VR Experience Testing is a research project that seeks to test different modes of interaction in a 3D environment. The Gear VR was used with three apps and a diverse participant group. Virtual reality is still in it's infancy stages and understanding how users respond to different modes of interaction can assist future design and development in VR applications.</p>
+                    </div>
+
+                    <div class="project__wrap">
+                        <h3>Step 2: Finding the Games</h3>
+                        <p>This project required a variety of vr interactions. I tried many games looking for the different interaction styles for testing. </p>
+                    </div>
+
+                    <div class="project__wrap">
+                        <h3>Step 3: Recruiting Users</h3>
+                        <p>I spent a couple days scouring the Oculus store for games. I did this because I am addicted to gaming AND so I could see the different interaction designs related to movement. </p>
+                    </div>
+
+                    <div class="project__wrap">
+                        <h3>I found most apps fell into three categories:</h3>
+                        <ul>
+                            <li>1. User's fixation on an object or location prompts movement. App used: 'Lands End'.</li>
+                            <li>2. User's control movement using the Gear VR controls. App used: 'Ocean Rift'.</li>
+                            <li>3. User is stationary with control of camera view based on head movement.
+                            App used: Wall Street Journal with a 360 degree video.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project__wrap">
+                        <h3>Step 4: Testing</h3>
+                        <p>There were 12 participants (7 male, 5 female , Median age = 34, age range: 18-84).</p>
+                    </div>
+
+                    <div class="project__wrap">
+                        <h3>The Procedure:</h3>
+                        <ul>
+                            <li>1. Consent form</li>
+                            <li>2. User testing script</li>
+                            <li>3. Randomly assigned app</li>
+                            <li>4. Questionnaires (2)</li>
+                            <li>5. Randomly assigned app</li>
+                            <li>6. Questionnaires (2)</li>
+                            <li>7. Final app</li>
+                            <li>8. Questionnaires (3)</li>
+                            <li>9. Debriefing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <div class="project__wrap">
+                        <h2 class="display-2 ">Tools for User Testing</h2>
+                        <div class="row">
+                            <div class="col-lg-4"><img src="/src/images/research1/GearVr.png" alt=""><span class="d-block text-center h3">Gear VR</span></div>
+                            <div class="col-lg-4"><img src="/src/images/research1/SamsungEdge.png" alt=""><span class="d-block text-center">Samsung Edge 7</span></div>
+                            <div class="col-lg-4"><img src="/src/images/research1/" alt=""><span class="d-block text-center">Oculus Apps</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" data-aos="zoom-in-down">
+
+            </div>
+
+            </div>
+
+        <div class="container" data-aos="zoom-in-down">
+            <h2 class="display-2 mb-1 projects__header">Research Stages</h2>
+        </div>
+
+
+
+   
+          
+      </section>
+    </article>
+
+<footer class="bg-dark text-white text-center py-4">
+  <span span id="year"></span> <span>Copyright © Designed and Developed by Chris Stultz </span>
+</footer>
+
+<script type="text/javascript" src="js/theme.js"></script><script type="text/javascript" src="js/frontpage.js"></script></body>
+</html>

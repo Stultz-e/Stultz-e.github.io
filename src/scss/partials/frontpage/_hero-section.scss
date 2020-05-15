@@ -1,0 +1,50 @@
+.hero {
+    background-image: url('/src/images/hero-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+
+    @include media-breakpoint-up(lg) {
+        height: 100vh;
+      }
+
+    &__white-btn {
+        @include media-breakpoint-up(md) {
+          transform: translateY(0);
+        }
+        @include media-breakpoint-up(lg) {
+            transform: translateX(30%);
+        }
+    }
+
+    &__dark-btn {
+        @include media-breakpoint-up(md) {
+            transform: translateY(0);
+        }
+        @include media-breakpoint-up(lg) {
+            transform: translateX(-30%);
+        }
+    }
+
+    &--section {
+        z-index: 3;
+        h2, a {
+            z-index: 3;
+        }
+        background-blend-mode: color-dodge;
+        height: auto;
+        position: relative;
+        &:before {
+            z-index: -1;
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black, .3);
+        }
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Chris Stultz Portfolio</title>
+  <link href="css/theme.css" rel="stylesheet"><link href="css/frontpage.css" rel="stylesheet"></head>
+
+    <header class="fixed-top">
+      <nav id="header" class="navbar navbar-expand-md navbar-dark bg-dark">          
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-sm-auto mt-4 mt-sm-0">
+              <li class="nav-item px-lg-2">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+              <li class="nav-item px-lg-2">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item px-lg-2">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item px-lg-2">
+                <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item dropdown px-lg-2">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Research
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item py-2 my-1" href="research-1.html">Interaction Design in VR</a>
+                <a class="dropdown-item py-2 my-1" href="research-2.html">eCommerce Usability Testing</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown px-lg-2">
+                  <a class="nav-link  active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item py-2 my-1" href="project-1.html">Pinnacle Design Lab Website</a>
+                    <a class="dropdown-item py-2 my-1" href="project-2.html">Susco</a>
+                    <a class="dropdown-item py-2 my-1" href="project-3.html">Altrac Design System</a>
+                    <a class="dropdown-item py-2 my-1 active" href="project-4.html">Elect@</a>
+                  </div>
+              </li>
+            </ul>
+
+            <div class="social-media-links ml-sm-auto py-5 py-md-0">
+                <a class="mx-2" href="mailto: cstultz@oswego.edu"><img class="inject-me" src="/src/images/icons/envelope.svg" alt="My Email Address"></a>
+                <a class="mx-2" href="tel:607-333-1500"><img class="inject-me" src="/src/images/icons/phone.svg" alt="My Phone"></a>         
+                <a class="mx-2" href="https://github.com/Stultz-e" target="_blank"><img class="inject-me" src="/src/images/icons/github.svg" alt="My Github"></a>
+                <a class="mx-2" href="https://dribbble.com/cstultzux" target="_blank"><img class="inject-me" src="/src/images/icons/dribbble.svg" alt="My Dribbble"></a>
+                <a class="mx-2" href="https://www.behance.net/cstultz06a1" target="_blank"><img class="inject-me" src="/src/images/icons/behance.svg" target="_blank" alt="My Behance"></a>
+                <a class="mx-2" href="https://www.linkedin.com/in/chrisstultzux/"><img class="inject-me" src="/src/images/icons/linkedin.svg" alt="My Linkedin"></a>
+            </div>
+          </div>
+      </nav>
+  </header>
+
+  <article class="mt-4">
+    <section class="project pt-lg-9 pt-7">
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 content-wrapper ml-lg-auto" data-aos-offset="400" data-aos="zoom-in-up">
+            <div class="project__heading">
+              <h2 class="display-2 projects__header mb-0 pb-2">Elect@ </h2>
+              <p class="h3 font-italic mt-lg-n1">Development</p>
+            </div>
+            <div class="project__wrap">
+              <h2 class="display-2 mb-1 projects__header">Summary</h2>
+              <p>This was a landing page for a political campaign app.</p>
+                <p>
+          
+                </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos-offset="400" data-aos="zoom-in-up">
+            <img src="/src/images/electat/electat.png" alt="pinnacle design project" data-aos="zoom-in-up" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center py-lg-7">
+          <div class="col-lg-6 content-wrapper ml-lg-auto" data-aos-offset="400" data-aos="zoom-in-up">
+            <div class="project__heading py-4">
+              <h2 class="display-2 projects__header mb-2 pb-2 ">Tools Used</h2>
+              <div class="project__icons">
+                <img src="/src/images/icons/tool--bootstrap.svg" alt="bootstrap">
+                <img src="/src/images/icons/tool--sass.svg" alt="scss">
+                <img src="/src/images/icons/tool--html.svg" alt="scss">
+              </div>
+            </div>
+            <div class="project__wrap">
+              <h3>Tasks & Responsibilities</h3>
+              <p>
+                This project was focused on Bootstrap 4 theming. Custom animations were set for a timed flashing effect. Multiple sliders for tablet screens. The website primarily serves as a funnel for the app which uses demographic data for likely voters in county districts. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos-offset="400" data-aos="zoom-in-up">
+            <img src="/src/images/electat/electat-editor.jpg" alt="Susco screenshots" class="img-fluid p-lg-5">
+          </div>
+        </div>
+
+
+        <div class="row justify-content-center align-items-center pb-lg-6">
+          <div class="col-lg-6 content-wrapper ml-lg-auto" data-aos-offset="550" data-aos="zoom-in-up">
+            <div class="project__heading py-5">
+              <h2 class="display-2 projects__header mb-2 pb-2">The Assets</h2>
+              <p>
+                The Sketch files were exported to Zeplin and the mockups/assets were exported at 2x size for retina display. This site was a developed 'mobile first' and The components vary a great deal between desktop, tablet and mobile. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos-offset="400" data-aos="zoom-in-up">
+            <img src="/src/images/altrac/altract-design.jpg" alt="Susco screenshots" class="img-fluid p-lg-5" data-aos="zoom-in-up">
+          </div>
+        </div>
+      </div>
+    </section>   
+  </article>
+
+<footer class="bg-dark text-white text-center py-4">
+  <span id="year"></span> <span>Copyright © Designed and Developed by Chris Stultz </span>
+</footer>
+
+<script type="text/javascript" src="js/theme.js"></script><script type="text/javascript" src="js/frontpage.js"></script></body>
+</html>

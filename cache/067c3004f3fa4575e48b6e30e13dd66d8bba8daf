@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Chris Stultz Portfolio</title>
+  <link href="css/theme.css" rel="stylesheet"><link href="css/frontpage.css" rel="stylesheet"></head>
+      <header class="fixed-top" data-aos="zoom-down">
+        <nav id="header" class="navbar navbar-expand-md navbar-dark bg-dark">          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-sm-auto mt-4 mt-sm-0">
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link active" href="index.html">Home</a>
+              </li>
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item px-lg-2">
+                  <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item dropdown px-lg-2">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Research
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item py-2 my-1" href="research-1.html">Interaction Design in VR</a>
+                  <a class="dropdown-item py-2 my-1" href="research-2.html">eCommerce Usability Testing</a>
+                </div>
+              </li>
+                <li class="nav-item dropdown px-lg-2">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item py-2 my-1" href="project-1.html">Pinnacle Design Lab Website</a>
+                      <a class="dropdown-item py-2 my-1" href="project-2.html">Susco</a>
+                      <a class="dropdown-item py-2 my-1" href="project-3.html">Altrac Design System</a>
+                      <a class="dropdown-item py-2 my-1" href="project-4.html">Elect@</a>
+                    </div>
+                </li>
+              </ul>
+              <div class="social-media-links ml-sm-auto py-5 py-md-0">
+                  <a class="mx-2" href="mailto: cstultz@oswego.edu" target="_blank"><img class="inject-me" src="/src/images/icons/envelope.svg" alt="My Email Address"></a>
+                  <a class="mx-2" href="tel:607-333-1500" target="_blank"><img class="inject-me" src="/src/images/icons/phone.svg" alt="My Phone"></a>         
+                  <a class="mx-2" href="https://github.com/Stultz-e" target="_blank"><img class="inject-me" src="/src/images/icons/github.svg" alt="My Github"></a>
+                  <a class="mx-2" href="https://dribbble.com/cstultzux" target="_blank"><img class="inject-me" src="/src/images/icons/dribbble.svg" alt="My Dribbble"></a>
+                  <a class="mx-2" href="https://www.behance.net/cstultz06a1" target="_blank"><img class="inject-me" src="/src/images/icons/behance.svg" target="_blank" alt="My Behance"></a>
+                  <a class="mx-2" href="https://www.linkedin.com/in/chrisstultzux/"><img class="inject-me" src="/src/images/icons/linkedin.svg" alt="My Linkedin"></a>
+              </div>
+            </div>
+        </nav>
+      </header>
+    <body class="mt-4">
+  <section class="hero d-flex flex-column justify-content-center">
+    <div class="container-fluid cover">
+      <div class="row justify-content-center align-items-center my-7">
+        <div class="col-lg-3 col-md-4 text-lg-right text-center order-lg-1 order-2 my-2 my-lg-0">
+          <img class="img-fluid hero__white-btn mt-lg-n12" src="/src/images/icons/product-design.svg" alt="" data-aos="zoom-in-left" data-aos-duration="1000">
+        </div>
+        <div class="col-lg-6 text-center order-lg-2 order-1 my-2 my-lg-0">
+          <img class="hero__me img-fluid pt-4" src="/src/images/hero-me.png" alt="" data-aos="zoom-in-down" data-aos-duration="1000">
+        </div>
+        <div class="col-lg-3 col-md-4 text-lg-left text-center order-lg-3 order-2">
+          <img class="img-fluid hero__dark-btn mt-lg-12" src="/src/images/icons/frontend-developer.svg" alt="" data-aos="zoom-in-right" data-aos-duration="1000">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects pt-3">
+    <div class="container" data-aos="zoom-in-down">
+      <div class="project__heading text-center">
+        <h2 class="display-1 projects__header text-header font-italic mb-0 pb-0">Projects</h2>
+        <p class="h3 font-italic">Product <span class="text-orange">Design</span> and <span class="text-orange">Development</span></p>
+      </div>
+
+      <div class="row align-items-center justify-content-center py-lg-7 py-5">
+        <div class="col-lg-4 offset-lg-1 col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="/src/images/pinnacle-design/pinnacle-tile.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a href="project-1.html" class="stretched-link card-title font-weight-bold text-center h5 d-block mb-0 text-uppercase">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 col-md-6">
+          <h3 class="font-italic pt-4 pt-lg-0">Pinnacle Design Lab Website</h3>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">Task</span>
+            <span>Design and Develop Website.</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">what</span>
+            <span class="">An online web agency for web design, web development and 3D modeling. This is the company lander. </span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">result</span>
+            <span class="">Mockups created in Adobe XD and Created a Dev Site for current and future use.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="bg-gray w-100">
+    <div class="container">
+      <div class="row align-items-center justify-content-center py-lg-7 py-5" data-aos="zoom-in-down">
+        <div class="col-lg-6 offset-lg-1 col-md-6 order-md-1 order-2">
+          <h3 class="font-italic pt-4 pt-lg-0">Susco </h3>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">Task</span>
+            <span>Susco Software Development.</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">what</span>
+            <span class="">This is a content management system built with a custom wordpress template.</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">result</span>
+            <span class="">CMS developed based off design specs. Users can make blogs, case-studies, add jobs and custom taxonomies.</span>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 col-md-6 order-md-2 order-1">
+          <div class="card">
+            <img class="card-img-top" src="/src/images/susco/susco-tile.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a href="project-2.html" class="stretched-link card-title font-weight-bold text-center h5 d-block mb-0 text-uppercase">See Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" data-aos="zoom-in-down">
+    <div class="row align-items-center justify-content-center py-lg-7 py-5">
+      <div class="col-lg-4 offset-lg-1 col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="/src/images/altrac/altrac-tile.jpg" alt="Card image cap">
+          <div class="card-body">
+            <a href="project-3.html" class="stretched-link card-title font-weight-bold text-center h5 d-block mb-0 text-uppercase">See Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 offset-lg-1 col-md-6">
+        <h3 class="font-italic pt-4 pt-lg-0">Altrac Design System</h3>
+        <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+          <span class="text-uppercase mr-4">Task</span>
+          <span>Convert a Figma design system to Sketch</span>
+        </div>
+        <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+          <span class="text-uppercase mr-4">what</span>
+          <span class="">A Wind Machine metrics application </span>
+        </div>
+        <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+          <span class="text-uppercase mr-4">result</span>
+          <span class="">Mockups created in Adobe XD and Created a Dev Site for current and future use.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray w-100" data-aos="zoom-in-down">
+    <div class="container">
+      <div class="row align-items-center justify-content-center py-lg-7 py-5">
+        <div class="col-lg-6 offset-lg-1 col-md-6 order-md-1 order-2">
+          <h3 class="font-italic pt-4 pt-lg-0">Elect@</h3>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">Task</span>
+            <span>A Landing Page for an App that mobilizes political canvassers.</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">what</span>
+            <span class="">Take a boiler Bootstrap4/Webpack and create a responsive website based off the design file.</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">result</span>
+            <span class="">Created Animations and transforms for an engaging landing page</span>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 col-md-6 order-md-2 order-1">
+          <div class="card">
+            <img class="card-img-top" src="/src/images/electat/electat-tile.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a href="project-4.html" class="stretched-link card-title font-weight-bold text-center h5 d-block mb-0 text-uppercase">See Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="designreel hero hero--section py-lg-12 py-10 bg-dark text-center">
+  <div data-aos="zoom-in-down">
+    <h2 class="h1 text-center text-white">Check out my Design reel.</h2>
+    <a class="btn btn-outline-light px-5 py-2 mt-2 font-weight-bold text-uppercase" href="designreel.html">Show Me</a>
+  </div>
+</section>
+
+  <section class="projects">
+    <div class="container" data-aos="zoom-in-down">
+      <div class="project__heading text-center">
+        <h2 class="display-1 projects__header text-header font-italic mb-0 pb-0">Research</h2>
+        <p class="h3 font-italic mt-lg-n1">Large Scale <span class="text-orange">User Testing</span> Studies</p>
+      </div>
+    <div class="row align-items-center justify-content-center py-lg-7 py-5">
+        <div class="col-lg-4 offset-lg-1 col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="/src/images/research/vr.png" alt="Card image cap">
+            <div class="card-body">
+              <a href="research-1.html" class="stretched-link card-title font-weight-bold text-center h5 d-block mb-0 text-uppercase">See Methodology</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 col-md-6 order-md-1 order-2">
+          <h3 class="font-italic pt-4 pt-lg-0">Interaction Design in VR</h3>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">topic</span>
+            <span>Testing Three VR Apps</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">what</span>
+            <span class="">A research project that seeks to test different modes of interaction in a 3D environment.</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">result</span>
+            <span class="">Find measurable differences in user reports related to usability, motion sickness and enjoyment.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="bg-gray w-100">
+    <div class="container">
+      <div class="row align-items-center justify-content-center py-lg-7 py-4" data-aos="zoom-in-down">
+        <div class="col-lg-6 offset-lg-1 col-md-6 order-md-1 order-2">
+          <h3 class="font-italic pt-4 pt-lg-0">Interaction Design in VR</h3>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">topic</span>
+            <span>Testing Three VR Apps</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">what</span>
+            <span class="">A research project that seeks to test different modes of interaction in a 3D environment.</span>
+          </div>
+          <div class="projects__text-wrap d-flex align-items-lg-center py-2 py-lg-4">
+            <span class="text-uppercase mr-4">result</span>
+            <span class="">Find measurable differences in user reports related to usability, motion sickness and enjoyment.</span>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 col-md-6 order-md-2 order-1">
+          <div class="card">
+            <img class="card-img-top" src="/src/images/research/ecommerce.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a href="research-2.html" class="stretched-link card-title font-weight-bold text-center h5 d-block mb-0 text-uppercase">See Methodology</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4">
+<span id="year"></span> <span>Copyright © Designed and Developed by Chris Stultz </span>
+</footer>
+
+<script type="text/javascript" src="js/theme.js"></script><script type="text/javascript" src="js/frontpage.js"></script></body>
+</html>

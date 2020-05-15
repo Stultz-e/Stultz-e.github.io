@@ -1,0 +1,60 @@
+.navbar {
+    a svg {
+        max-width: 2rem;
+        height: auto;
+        transition: all linear 200ms;
+
+        &:hover {
+            transform: rotate(20deg) scale(1.1);
+        }
+
+        &:hover > .nc-icon-wrapper {
+            fill: $orange;
+        }
+
+        .nc-icon-wrapper {
+            fill: #fff;
+        }
+    }
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .nav-link {
+        position: relative;
+        
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            background-color: $orange;
+            height: 2px;
+            transform: scale(0);
+            transform-origin: left;
+            transition: 200ms all ease-in-out;
+        }
+    }
+
+    .nav-link:hover:after {
+        transform: scale(1);
+        width: 100%;
+    }
+}
+
+
+.dropdown-menu {
+    top: 95%;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: $orange;
+    color: #fff;
+}
+
+
+.dropdown-item.active {
+    background-color: $orange !important;
+}

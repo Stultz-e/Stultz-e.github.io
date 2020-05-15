@@ -1,0 +1,51 @@
+.display-1, 
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
+    font-weight: $font-weight-normal;
+    font-family: $display-font-family;
+}
+
+p {
+    color: $gray-600;
+    line-height: 1.5;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+    
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+
+.content-wrapper {
+    @include media-breakpoint-up(sm) {
+        max-width: map-get($container-max-widths, sm);
+    }
+    @include media-breakpoint-up(md) {
+        max-width: map-get($container-max-widths, md);
+    }
+    @include media-breakpoint-up(lg) {
+        max-width: map-get($container-max-widths, lg);
+    }
+    @include media-breakpoint-up(xl) {
+        max-width: map-get($container-max-widths, xl)/ 2;
+    }
+}
+
+

@@ -1,0 +1,18 @@
+@each $color, $value in $theme-colors {
+	.btn-#{$color} {
+		@include button-variant($value, $value,
+			$hover-background: lighten($value, 7.5%),
+			$hover-border: lighten($value, 15%),
+			$active-background: lighten($value, 10%),
+			$active-border: lighten($value, 12.5%));
+	}
+
+	//Make Text Classes for all colors and make them available in WP
+	.text-#{$color} {
+		color: $value !important;
+	}
+
+	@each $color, $value in $theme-colors {
+		@include bg-variant(".bg-#{$color}", $value);
+	}
+}
