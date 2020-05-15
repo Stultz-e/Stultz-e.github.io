@@ -38,8 +38,9 @@ module.exports = merge(common, {
                             {
                                 loader: 'file-loader',
                                 options: {
-                                    name: '[path][name].[ext]',
-                                    context: 'src'
+                                    // name: '[path][name].[ext]',
+                                    // context: 'src'
+                                    esModule: false,
                                 }
                             }
                         ]

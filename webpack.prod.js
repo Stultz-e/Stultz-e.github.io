@@ -102,7 +102,6 @@ module.exports = merge(common, {
                     {
                         loader: 'file-loader',
                         options: {
-                            context: 'src',
                             esModule: false,
                             // name: (resourcePath) => {
                             //     if (/node_modules/.test(resourcePath)) {
