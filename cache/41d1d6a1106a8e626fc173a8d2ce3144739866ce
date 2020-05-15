@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Chris Stultz Portfolio</title>
-  </head>
+  <link href="css/theme.css" rel="stylesheet"><link href="css/frontpage.css" rel="stylesheet"></head>
 
     <header class="fixed-top">
       <nav id="header" class="navbar navbar-expand-md navbar-dark bg-dark">          
@@ -73,7 +73,7 @@
             </div>
           </div>
           <div class="col-lg-6" data-aos-offset="400" data-aos="zoom-in-up">
-            <img  alt="pinnacle design project" class="img-fluid" src="<%=require("./images/pinnacle-design/pinnacle-design-hero.png")%>">
+            <img  alt="pinnacle design project"  class="img-fluid" src="[object Module]">
           </div>
         </div>
 
@@ -125,5 +125,5 @@
   <span id="year"></span> <span>Copyright © Designed and Developed by Chris Stultz </span>
 </footer>
 
-</body>
+<script type="text/javascript" src="js/theme.js"></script><script type="text/javascript" src="js/frontpage.js"></script></body>
 </html>

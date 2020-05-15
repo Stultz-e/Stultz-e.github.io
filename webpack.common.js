@@ -8,7 +8,6 @@ module.exports = {
     entry: {
         theme:      './src/theme.js',
         frontpage:  './src/front-page.js',
-
     },
     output: {
         path: path.resolve(__dirname, './dist'),

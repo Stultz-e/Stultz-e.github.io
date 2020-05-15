@@ -1,5 +1,0 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato&family=Neuton&display=swap);
-.hero{background-image:url("/src/images/hero-bg.jpg");background-size:cover;width:100%;height:100vh;max-height:100%;background-position:center;background-attachment:fixed}.hero__white-btn{transform:translateY(-50%)}@media (min-width: 768px){.hero__white-btn{transform:translateY(0)}}@media (min-width: 992px){.hero__white-btn{transform:translateX(30%)}}.hero__dark-btn{transform:translateY(-50%)}@media (min-width: 768px){.hero__dark-btn{transform:translateY(0)}}@media (min-width: 992px){.hero__dark-btn{transform:translateX(-30%)}}.projects .card{border:0;transition:all 300ms ease-in-out}.projects .card:hover{box-shadow:5px 5px 20px 4px rgba(0,0,0,0.1)}.projects a{text-decoration:none;color:#fff}.projects .card-body{background-color:#fd7e14;transition:all 300ms ease-in-out}.projects .card:hover>.card-body{background-color:#dc6502}
-
-
-/*# sourceMappingURL=frontpage.css.map*/
