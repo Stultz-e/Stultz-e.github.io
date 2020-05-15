@@ -10,6 +10,5 @@ require('./scss/theme.scss');
 
 import AOS from 'aos';
 
-AOS.init();
-
+AOS.init({disable: 'mobile'});
 
