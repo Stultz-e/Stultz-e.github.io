@@ -7,8 +7,8 @@ import 'bootstrap/js/dist/modal';
 require('./js/app');
 require('./scss/theme.scss');
 
-
 import AOS from 'aos';
-
 AOS.init({disable: 'mobile'});
+
+
 
