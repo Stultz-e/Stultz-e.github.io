@@ -9,11 +9,16 @@
 
     &__wrap {
         padding: 2rem 0;
+        }
 
         li {
             margin-top: .3rem;
         }
-    }
+
+        &.takeaway {
+            background-color: #444;
+        }
+
 
     &__limit {
         @include media-breakpoint-up(md) {
@@ -53,15 +58,6 @@
         }
     }
 
-    .takeaway {
-        background-color: #464646;
-        
-        & > h2 {
-            color: $white;
-        }
-    }
-    
-
 
     h2 {
         color: $gray-700;
@@ -81,7 +77,16 @@
     }
 }
 
+.takeaway {
+    background-color: #464646;
+    color: #fff;
 
+    ul {
+        @include media-breakpoint-up(lg) {
+            max-width: 50%;
+        }
+    }
+}
 
 
 
